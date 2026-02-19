@@ -1,3 +1,11 @@
+.card .card-title {
+  color: rgb(93, 70, 56);
+}
+
+.card .price{
+  color: rgb(93, 70, 56);
+}
+
 .bag {
     display: flex;
     justify-content: center;

@@ -5,6 +5,7 @@ const Products1 = ({ result }) => {
     <>
       <section className="card-container">{result}</section>
     </>
+    
   );
 };
 

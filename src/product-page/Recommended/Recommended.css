@@ -1,11 +1,13 @@
 .recommended-flex {
   display: flex;
-  margin-left: 20rem;
+  margin-left: 21rem;
+  /* min-height: 30%; */
 }
 
 .recommended-title {
-  margin-left: 10rem;
+  margin-left: 5%;
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
+  color: rgb(93, 70, 56);
 }

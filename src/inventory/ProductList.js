@@ -1,7 +1,7 @@
 //import product images 
 import earring1 from "../assets/earring-images/black-gold-earrings.jpg"
-import earring2 from "../assets/earring-images/diamond-leaves-earring.jpg"
-import earring3 from "../assets/earring-images/gold-diamond-twist-earrings.jpeg"
+import earring2 from "../assets/earring-images/glass-bead-earrings.jpg"
+// import earring3 from "../assets/earring-images/gold-diamond-twist-earrings.jpeg"
 import earring4 from "../assets/earring-images/gold-twist-earring.jpeg"
 import earring5 from "../assets/earring-images/ornate-earrings.jpg"
 import necklace1 from "../assets/necklace-images/blue-gem-necklace.jpg"
@@ -9,6 +9,7 @@ import necklace2 from "../assets/necklace-images/diamond-necklace.jpeg"
 import necklace3 from "../assets/necklace-images/gold-chain-diamond-necklace.jpeg"
 import necklace4 from "../assets/necklace-images/pearl-necklace.jpg"
 import ring1 from "../assets/ring-images/gold-rings.jpeg"
+import ring2 from "../assets/ring-images/ring-gold-rectangle.jpg"
 
 
 const ProductList=[
@@ -31,10 +32,10 @@ const ProductList=[
     {
         id: 3,
         name: "Alice",
-        image: earring3.src,
+        image: ring2.src,
         price: 56.99,
         material:"gold",
-        category: "earring",
+        category: "ring",
     },
     {
         id: 4,

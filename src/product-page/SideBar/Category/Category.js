@@ -29,12 +29,6 @@ function Category({ handleChange }) {
           title="Rings"
           name="test"
         />
-        {/* <Input
-          handleChange={handleChange}
-          value="heels"
-          title="Heels"
-          name="test"
-        /> */}
       </div>
     </div>
   );

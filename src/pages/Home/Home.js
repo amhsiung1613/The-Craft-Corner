@@ -4,9 +4,9 @@ import Carousel from '../../components/Carousel/Carousel';
 // import App from "../components/carousel-new/App";
 import React from 'react';
 import "./Home.css";
-import Rings from "../../assets/ring-images/ring-category-cover.jpg"
+import Rings from "../../assets/ring-images/gold-rings.jpeg"
 import Necklace from "../../assets/necklace-images/diamond-necklace.jpeg"
-import Earring from "../../assets/earring-images/gold-diamond-twist-earrings.jpeg"
+import Earring from "../../assets/earring-images/gold-twist-earring.jpeg"
 
 function Home() {
   

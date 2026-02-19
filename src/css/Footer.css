@@ -1,21 +1,21 @@
 .footer {
-    width: 100%;
-    height: 200px;
-    background-color: rgb(215, 186, 151);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10px;
-  }
-  
-  .socialMedia svg {
-    color: rgb(93, 70, 56);
-    margin: 20px;
-    font-size: 70px;
-    cursor: pointer;
-  }
-  
-  .footer p {
-    color: black;
-  }
+  width: 100%;
+  height: 200px;
+  background-color: rgb(224, 200, 170);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.socialMedia svg {
+  color: rgb(93, 70, 56);
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.footer p {
+  color: rgb(93, 70, 56);
+}

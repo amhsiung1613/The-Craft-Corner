@@ -1,6 +1,5 @@
 nav {
     display: flex;
-    border-bottom: 2px solid #f3f3f3;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
@@ -13,14 +12,15 @@ input {
     border: none;
     background: #faebd7;
     outline: none;
-    margin-left: 25%;
+    margin-left: 10%;
     border-radius: 5px;
     position: relative;
-    width: 15rem;
+    width: 375px;
+    height: 30px;
 }
   
-.nav-icons {
+/* .nav-icons {
     width: 1.5rem;
     height: 1.5rem;
     margin-left: 2rem;
-}
+} */

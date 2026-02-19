@@ -2,6 +2,7 @@
     font-size: 22px;
     font-weight: normal;
     margin-bottom: 20px;
+    color: rgb(93, 70, 56);
   }
   
   .sidebar-items {
@@ -32,13 +33,13 @@
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background-color: #c0a284;
     border-radius: 50%;
   }
   
-  .all {
+  /* .all {
     background: linear-gradient(blue, crimson);
-  }
+  } */
   
   .sidebar-label-container:hover input ~ .checkmark {
     background-color: #ccc;

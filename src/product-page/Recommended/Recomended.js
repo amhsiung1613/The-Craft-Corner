@@ -1,5 +1,6 @@
 import Button from "../Product-Components/Button";
 import "./Recommended.css";
+// import "../Product-Components/Button.css"
 
 const Recommended = ({ handleClick }) => {
   return (
