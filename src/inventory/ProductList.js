@@ -15,7 +15,7 @@ const ProductList=[
     {
         id: 1,
         name: "Julia",
-        image: earring1,
+        image: earring1.src,
         price: 36.99,
         material: "gold",
         category: "earring",
@@ -23,7 +23,7 @@ const ProductList=[
     {
         id: 2,
         name: "Erica",
-        image: earring2,
+        image: earring2.src,
         price: 45.99,
         material:"silver",
         category: "earring",
@@ -31,7 +31,7 @@ const ProductList=[
     {
         id: 3,
         name: "Alice",
-        image: earring3,
+        image: earring3.src,
         price: 56.99,
         material:"gold",
         category: "earring",
@@ -39,7 +39,7 @@ const ProductList=[
     {
         id: 4,
         name: "Emily",
-        image: earring4,
+        image: earring4.src,
         price: 24.99,
         material: "gold",
         category: "earring",
@@ -47,7 +47,7 @@ const ProductList=[
     {
         id: 5,
         name: "Celine",
-        image: earring5,
+        image: earring5.src,
         price: 24.99,
         material: "gold",
         category: "earring",
@@ -55,7 +55,7 @@ const ProductList=[
     {
         id: 6,
         name: "Anne",
-        image: necklace1,
+        image: necklace1.src,
         price: 24.99,
         material: "gold",
         category: "necklace",
@@ -63,7 +63,7 @@ const ProductList=[
     {
         id: 7,
         name: "Maria",
-        image: necklace2,
+        image: necklace2.src,
         price: 84.99,
         material: "silver",
         category: "necklace",
@@ -71,7 +71,7 @@ const ProductList=[
     {
         id: 8,
         name: "Lina",
-        image: necklace3,
+        image: necklace3.src,
         price: 95.99,
         material: "gold",
         category: "necklace",
@@ -79,7 +79,7 @@ const ProductList=[
     {
         id: 9, 
         name: "Rose",
-        image: necklace4,
+        image: necklace4.src,
         price: 240.99,
         material: "silver",
         category: "necklace",
@@ -87,7 +87,7 @@ const ProductList=[
     {
         id: 10,
         name: "Destiny",
-        image: ring1,
+        image: ring1.src,
         price: 180.99,
         material: "gold",
         category: "ring",

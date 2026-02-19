@@ -13,21 +13,22 @@ function Home() {
   return (
     <>
       {/* <h2>Latest News</h2> */}
+      <br></br>
       <div>
         <Carousel />
       </div>
       <h2>Categories</h2>
       <div className='categories'>
         <div className='card'>
-          <img src={Rings} alt='Rings' className='img'/>
+          <img src={Rings.src} alt='Rings' className='img'/>
           <h3 className='title'>Rings</h3>
         </div>
         <div className='card'>
-          <img src={Necklace} alt='Necklace' className='img'/>
+          <img src={Necklace.src} alt='Necklace' className='img'/>
           <h3 className='title'>Necklaces</h3>
         </div>
         <div className='card'>
-          <img src={Earring} alt='Earring' className='img'/>
+          <img src={Earring.src} alt='Earring' className='img'/>
           <h3 className='title'>Earrings</h3>
         </div>
       </div>

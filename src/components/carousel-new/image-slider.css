@@ -25,7 +25,7 @@
   padding: 1rem;
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
-  height: 24vw;
+  /* height: 24vw; */
 }
 
 .img-slider-btn:hover,

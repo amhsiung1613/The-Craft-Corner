@@ -49,8 +49,8 @@ export function ImageSlider({ images }: ImageSliderProps) {
       >
         {images.map(({ url, alt }, index) => (
           <img
-            key={url}
-            src={url}
+            key={url.src}
+            src={url.src}
             alt={alt}
             aria-hidden={imageIndex !== index}
             className="img-slider-img"

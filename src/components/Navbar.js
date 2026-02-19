@@ -18,7 +18,7 @@ function Navbar() {
     <div className="navbar">
         <div className="leftSide" id={openLinks ? "open" : "close"}>
           <Link to="/home">
-            <img src={Logo} alt="Logo" style={{ cursor: 'pointer'}}/>
+            <img src={Logo.src} alt="Logo" style={{ cursor: 'pointer'}}/>
           </Link>
           <div className="hiddenLinks">
             <Link to="/home"> Home </Link>
