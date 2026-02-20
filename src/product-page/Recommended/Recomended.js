@@ -1,11 +1,12 @@
 import Button from "../Product-Components/Button";
 import "./Recommended.css";
-// import "../Product-Components/Button.css"
+// import Sidebar from "../Sidebar/Sidebar";
+// import Display from "../display";
 
 const Recommended = ({ handleClick }) => {
   return (
     <>
-      <div>
+      <div className="filters">
         <h2 className="recommended-title">Recommended</h2>
         <div className="recommended-flex">
           <Button onClickHandler={handleClick} value="" title="All Products" />
@@ -15,6 +16,9 @@ const Recommended = ({ handleClick }) => {
           {/* <Button onClickHandler={handleClick} value="gold" title="Gold" />
           <Button onClickHandler={handleClick} value="silver" title="Silver" /> */}
         </div>
+        {/* <Sidebar/> */}
+        {/* <Display/> */}
+
       </div>
     </>
   );

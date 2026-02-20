@@ -1,9 +1,9 @@
 .sidebar {
   background-color: rgb(237, 223, 213);
-  width: 15%;
+  width: 25vh;
   position: absolute;
-  height: 100%;
-  border-right: 2px solid #e5e5e5;
+  min-height: 100vh;
+  border-right: 2px solid rgb(224, 200, 170);
   z-index: -1;
   display: flex;
   flex-direction: column;
