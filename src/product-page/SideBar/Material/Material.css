@@ -1,3 +1,9 @@
 .color-title {
-    margin-top: 2rem;
-  }
+  margin-top: 20px;
+}
+
+.material-filter {
+  /* display: flexbox; */
+  align-content: center;
+  margin-left: 30px;
+}

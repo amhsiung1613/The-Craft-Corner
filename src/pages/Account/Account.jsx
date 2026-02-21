@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Account.css";
 import "../Register/Register"
-
+ 
 const Account = () => {
   return (
     <div className='body'>

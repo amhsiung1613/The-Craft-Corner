@@ -1,32 +1,9 @@
-// import React from 'react'
-
-// const ShoppingCart = ({ cartItems }) => {
-//   return (
-//     <div>
-//         <div className="cart-items">
-//             <div className="cart-items-header">Cart Items</div>
-//             {cartItems.length ===0 && (
-//                 <div className="cart-items-empty">No items in cart. </div>
-//             )}
-//         </div>
-//         <div>
-//             {cartItems.map((item) => (
-//                 <div key={item.id} className="cart-item-list">
-
-//                 </div>
-//             ))}
-//         </div>
-//     </div>
-//   )
-// }
-
-// export default ShoppingCart
-
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 import productList from "../../inventory/ProductList";
 import { CartItem } from "./cart-item";
 import { useNavigate } from "react-router-dom";
+// import "../Checkout/Checkout"
 
 import "./Cart.css";
 const Cart = () => {
@@ -54,7 +31,7 @@ const Cart = () => {
           <button onClick={() => navigate("/products")}> Continue Shopping </button>
           <button
             onClick={() => {
-              checkout();
+              // checkout();
               navigate("/checkout");
             }}
           >

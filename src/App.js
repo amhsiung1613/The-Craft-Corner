@@ -9,6 +9,7 @@ import Home from "./pages/Home/Home";
 // import Logo from "./assets/logo.png"
 import Footer from "./components/Footer";
 import Cart from './pages/Cart/Cart';
+import Checkout from './pages/Checkout/Checkout';
 // import Account from "./pages/Account/Account"
 // import Register from "./pages/Register/Register"
 // import PasswordForget from "./pages/password-forgot/Password-forgot"
@@ -33,8 +34,7 @@ function App() {
             {/* <Route path="/search" exact element={<Search />}/>   */}
             <Route path="/favorites" exact element={<Fav />}/>
             <Route path="/cart" exact element={<Cart />}/>
-            {/* <Route path="/shoppingcart" exact>
-              <ShoppingCart cartItems={Display.cartItems} handleAddproduct={Display.handleAddproduct}/>/</Route> */}
+            <Route path="/checkout" exact element={<Checkout />}/>
             {/* <Route path="/account" exact element={<Account />}/>   */}
             <Route path="/about" exact element={<About />}/>  
             {/* <Route path='/register' exact element={<Register />}/> */}

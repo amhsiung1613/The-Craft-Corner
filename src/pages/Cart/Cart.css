@@ -32,9 +32,11 @@
 
 .countHandler input {
   /* width: 80px; */
+  margin-left: 0px;
   height: 20px;
   text-align: center;
   font-weight: bolder;
+  padding-left: 0px;
   /* padding-right: 0rem; */
 }
 

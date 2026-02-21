@@ -1,65 +1,78 @@
-import "./Material.css";
+// import "./Material.css";
+// // import MaterialInput from "../../Product-Components/materialInput";
+// import Input from "../../Product-Components/categoryInput";
+
+// function Material({ handleChange, selectedMaterial }) {
+//   return (
+//     <>
+//       <h2 className="sidebar-title color-title">Material</h2>
+//         <div className="material-filter">
+//           <label className="sidebar-label-container">
+//             <input onChange={handleChange} type="radio" value="" name="material" checked={selectedMaterial === ""} />
+//             <span className="checkmark all"></span>
+//             All
+//           </label>
+
+//           <Input
+//             handleChange={handleChange}
+//             value="gold"
+//             title="Gold"
+//             name="material"
+//             selectedVal={selectedMaterial}
+//           />
+
+//           <Input
+//             handleChange={handleChange}
+//             value="silver"
+//             title="Silver"
+//             name="material"
+//             selectedVal={selectedMaterial}
+//           />
+//         </div>
+//     </>
+//   );
+// };
+
+// export default Material;
+
 import Input from "../../Product-Components/Input";
+import "./Material.css";
 
-function Material({ handleChange }) {
+function Material({ handleChange, selectedMaterial }) {
   return (
-    <>
-      <div>
-        <h2 className="sidebar-title color-title">Material</h2>
-        <label className="sidebar-label-container">
-          <input onChange={handleChange} type="radio" value="" name="test1" />
-          <span className="checkmark all"></span>
-          All
-        </label>
+    <div className="material-filter">
+      <h2 className="sidebar-title">Material</h2>
 
-        <Input
-          handleChange={handleChange}
-          value="gold"
-          title="Gold"
-          name="test1"
-          color="gold"
-        />
-
-        <Input
-          handleChange={handleChange}
-          value="silver"
-          title="Silver"
-          name="test1"
-          color="silver"
-        />
-
-        {/* <Input
-          handleChange={handleChange}
-          value="red"
-          title="Red"
-          name="test1"
-          color="red"
-        />
-
-        <Input
-          handleChange={handleChange}
-          value="green"
-          title="Green"
-          name="test1"
-          color="green"
-        /> */}
-
-        {/* <label className="sidebar-label-container">
-          <input
-            onChange={handleChange}
-            type="radio"
-            value="white"
-            name="test1"
-          />
-          <span
-            className="checkmark"
-            style={{ background: "white", border: "2px solid black" }}
-          ></span>
-          White
-        </label> */}
-      </div>
-    </>
+      <Input
+        handleChange={handleChange}
+        value=""
+        title="All"
+        name="material"
+        selectedVal={selectedMaterial}
+      />
+      <Input
+        handleChange={handleChange}
+        value="gold"
+        title="Gold"
+        name="material"
+        selectedVal={selectedMaterial}
+      />
+      <Input
+        handleChange={handleChange}
+        value="silver"
+        title="Silver"
+        name="material"
+        selectedVal={selectedMaterial}
+      />
+      {/* <Input
+        handleChange={handleChange}
+        value="platinum"
+        title="Platinum"
+        name="material"
+        selectedVal={selectedMaterial}
+      /> */}
+    </div>
   );
-};
+}
 
 export default Material;

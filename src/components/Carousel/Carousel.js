@@ -1,12 +1,12 @@
 
 import React from "react";
-import news1 from "../../assets/ring-images/ring-category-cover.jpg";
-import news2 from "../../assets/pearls.jpg";
+import news1 from "../../assets/carousel-1.jpg";
+import news2 from "../../assets/carousel-2.jpg";
 import {ImageSlider} from "../carousel-new/ImageSlider.tsx";
 
 const IMAGES = [
-  { url: news1, alt: "News One" },
-  { url: news2, alt: "News Two" },
+  { id: 1, url: news1.src, alt: "News One" },
+  { id: 2, url: news2.src, alt: "News Two" },
 ]
 
 function Carousel() {

@@ -2,6 +2,8 @@
   margin-top: 20px;
 }
   
-.ml {
-  margin-left: 20px;
+.price-filter {
+  /* display: flexbox; */
+  align-content: center;
+  margin-left: 30px;
 }

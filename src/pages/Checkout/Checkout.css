@@ -1,0 +1,138 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* min-height: 10vh; */
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: rgb(215, 186, 151); */
+    color: rgb(93, 70, 56);
+    /* padding: 30px; */
+}
+
+.shopping-cart, .credit-card {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: rgb(215, 186, 151); */
+    color: rgb(93, 70, 56);
+    padding: 30px;
+}
+
+.wrapper h1 {
+    padding: 10px;
+    font-size: 36px;
+    text-align: center;
+    color: rgb(93, 70, 56);
+}
+
+.wrapper .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* margin: 20px; */
+    /* background-color: rgb(215, 186, 151); */
+}
+
+.input-box{
+    margin: 5px;
+}
+
+.input-box input {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(93, 70, 56);
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(93, 70, 56);
+    padding: 15px 15px 15px 15px;
+    margin: 20px;
+    
+}
+
+.input-box input::placeholder {
+    color: rgb(93, 70, 56);
+}
+
+.wrapper button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 45px;
+    background: rgb(93, 70, 56);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 45px;
+    background: rgb(93, 70, 56);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(215, 186, 151);
+    font-weight: 700;
+}
+
+
+/* 
+.wrapper .remember-forget {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+    accent-color: rgb(93, 70, 56);
+    /* padding: 0; */
+    /* margin-right: -80px;
+    margin-left: -80px;
+}
+
+.remember-forget a {
+    color: rgb(93, 70, 56);
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: rgb(93, 70, 56);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+} */

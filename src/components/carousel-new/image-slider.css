@@ -6,10 +6,11 @@
 
 .img-slider-img {
   object-fit: cover;
+  /* object-position: top; */
   width: 100vw;
-  height: 27vw;
+  height: 24vw;
   display: block;
-  flex-shrink: 0;
+  flex-shrink: 0.16;
   flex-grow: 0; 
   top: 50%;
   left: 50%;

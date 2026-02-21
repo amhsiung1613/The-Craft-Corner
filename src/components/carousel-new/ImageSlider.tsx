@@ -9,6 +9,7 @@ import "./image-slider.css"
 
 type ImageSliderProps = {
   images: {
+    id: string
     url: string
     alt: string
   }[]
@@ -47,9 +48,9 @@ export function ImageSlider({ images }: ImageSliderProps) {
           overflow: "hidden",
         }}
       >
-        {images.map(({ url, alt }, index) => (
+        {images.map(({ id, url, alt }, index) => (
           <img
-            key={url}
+            key={id}
             src={url}
             alt={alt}
             aria-hidden={imageIndex !== index}
