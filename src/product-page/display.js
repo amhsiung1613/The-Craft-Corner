@@ -117,28 +117,46 @@ function Display() {
 
 
   return (
-    <>
-      {/* <Router>
-        <Routes productItems={productItems} cartItems={cartItems} handleAddProduct={handleAddProduct}/>
-      </Router> */}
+    // <>
+    //   <Sidebar 
+    //   handleChange={handleChange} 
+    //   // handleMaterialChange={handleMaterialChange} 
+    //   // handlePriceChange={handlePriceChange} 
+    //   selectedCategory={selectedCategory}
+    //   selectedMaterial={selectedMaterial}
+    //   selectedPrice={selectedPrice} />
+    //   <Navigation query={query} handleInputChange={handleInputChange} />
+    //   <Recommended handleClick={handleClick} />
+    //   {/* <Products result={result} /> */}
+
+    //   <Products 
+    //     result={filteredProducts.map(product => (
+    //       <Card key={product.id} {...product} />
+    //     ))} 
+    //   />
+
+    // </>
+    <div className="display-layout">
       <Sidebar 
       handleChange={handleChange} 
-      // handleMaterialChange={handleMaterialChange} 
-      // handlePriceChange={handlePriceChange} 
-      selectedCategory={selectedCategory}
-      selectedMaterial={selectedMaterial}
-      selectedPrice={selectedPrice} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      {/* <Products result={result} /> */}
-
-      <Products 
-        result={filteredProducts.map(product => (
-          <Card key={product.id} {...product} />
-        ))} 
+        // handleMaterialChange={handleMaterialChange} 
+        // handlePriceChange={handlePriceChange} 
+        selectedCategory={selectedCategory}
+        selectedMaterial={selectedMaterial}
+        selectedPrice={selectedPrice} 
       />
+      
+      <div className="display-content">
+        <Navigation query={query} handleInputChange={handleInputChange} />
+        <Recommended handleClick={handleClick} />
+        <Products 
+          result={filteredProducts.map(product => (
+            <Card key={product.id} {...product} />
+          ))} 
+        />
+      </div>
+  </div>
 
-    </>
   );
 }
 

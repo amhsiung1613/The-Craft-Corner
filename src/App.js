@@ -22,29 +22,32 @@ import { FavContextProvider } from './context/fav-context';
 
 function App() {
   return ( 
-    <div className="app">
-      <ShopContextProvider>
-      <FavContextProvider>
-        <Router>
-          <Navbar />        
-          <Routes>
-            <Route path="/" exact element={<Home />}/>
-            <Route path="/home" exact element={<Home />} />
-            <Route path="/products" exact element={<Products />}/>  
-            {/* <Route path="/search" exact element={<Search />}/>   */}
-            <Route path="/favorites" exact element={<Fav />}/>
-            <Route path="/cart" exact element={<Cart />}/>
-            <Route path="/checkout" exact element={<Checkout />}/>
-            {/* <Route path="/account" exact element={<Account />}/>   */}
-            <Route path="/about" exact element={<About />}/>  
-            {/* <Route path='/register' exact element={<Register />}/> */}
-            {/* <Route path='/password-forget' exact element={<PasswordForget />}/> */}
-          </Routes>
-          <Footer />
-        </Router>
-      </FavContextProvider>
-      </ShopContextProvider>
-    </div>
+    <Router>
+      <div className="app">
+        <ShopContextProvider>
+        <FavContextProvider>
+          
+            <Navbar />   
+            <main>     
+              <Routes>
+                <Route path="/" exact element={<Home />}/>
+                <Route path="/home" exact element={<Home />} />
+                <Route path="/products" exact element={<Products />}/>  
+                {/* <Route path="/search" exact element={<Search />}/>   */}
+                <Route path="/favorites" exact element={<Fav />}/>
+                <Route path="/cart" exact element={<Cart />}/>
+                <Route path="/checkout" exact element={<Checkout />}/>
+                {/* <Route path="/account" exact element={<Account />}/>   */}
+                <Route path="/about" exact element={<About />}/>  
+                {/* <Route path='/register' exact element={<Register />}/> */}
+                {/* <Route path='/password-forget' exact element={<PasswordForget />}/> */}
+              </Routes>
+            </main>
+            <Footer />
+        </FavContextProvider>
+        </ShopContextProvider>
+      </div>
+    </Router>
   );
 }
 

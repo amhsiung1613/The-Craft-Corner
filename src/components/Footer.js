@@ -10,7 +10,9 @@ function Footer() {
     <div className="footer">
       <div className="socialMedia">
         {/* <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> */}
-        <LinkedInIcon /> 
+        <a href="https://www.linkedin.com/in/amber-hsiung-073b2b23b/" target="_blank" rel="noopener noreferrer">
+          <LinkedInIcon />
+        </a>
       </div>
       <p> &copy; 2024 bearhousehandmade.com</p>
     </div>

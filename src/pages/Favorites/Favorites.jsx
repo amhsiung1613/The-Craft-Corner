@@ -28,7 +28,6 @@ const Fav = () => {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          {/* <p> Subtotal: ${totalAmount} </p> */}
           <button onClick={() => navigate("/products")}> Continue Shopping </button>
         </div>
       ) : (

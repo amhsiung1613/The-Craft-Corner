@@ -16,10 +16,12 @@
 }
 
 .sidebar-label-container {
-  display: block;
+  display: flex;
+  align-items: center;
+  width: 250px;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -48,14 +50,14 @@
 } */
 
 .sidebar-label-container:hover input ~ .checkmark {
-  background-color: #ffffff;
+  background-color: rgb(142, 109, 56);
 }
 
 .sidebar-label-container input:checked ~ .checkmark {
   background-color: rgb(93, 70, 56);
 }
 
-.checkmark:after {
+/* .checkmark:after {
   content: "";
   position: absolute;
   display: none;
@@ -71,10 +73,9 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: white;
-}
+} */
 
-.line {
+/* .line {
   margin-top: 3rem;
   border-color: #f7f7f7;
-}
+} */

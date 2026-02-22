@@ -5,22 +5,36 @@
     font-family: sans-serif;
   }
   
-  a {
-    text-decoration: none;
-    color: rgb(97, 97, 97);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .btns {
-    padding: 10px 20px;
-    margin-right: 6px;
-    background: transparent;
-    border: none;
-    border: 0.6px solid #ccc;
-    border-radius: 5px;
-    color: #323232;
-    cursor: pointer;
-  }
+a {
+  text-decoration: none;
+  color: rgb(97, 97, 97);
+}
+
+li {
+  list-style: none;
+}
+
+.btns {
+  padding: 10px 20px;
+  margin-right: 6px;
+  background: transparent;
+  border: none;
+  border: 0.6px solid #ccc;
+  border-radius: 5px;
+  color: #323232;
+  cursor: pointer;
+}
+
+.display-layout {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: rgb(237, 223, 213);
+}
+
+.display-content {
+  flex: 1;
+}
