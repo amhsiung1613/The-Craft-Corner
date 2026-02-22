@@ -15,17 +15,6 @@ const Nav = ({ handleInputChange, query }) => {
           placeholder="Enter your search."
         />
       </div>
-      {/* <div className="profile-container">
-        <a href="#">
-          <FavoriteIcon className="nav-icons" />
-        </a>
-        <a href="">
-          <ShoppingCartIcon className="nav-icons" />
-        </a>
-        <a href="">
-          <PersonIcon className="nav-icons" />
-        </a>
-      </div> */}
     </nav>
   );
 };

@@ -1,5 +1,6 @@
 .body {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,7 @@
 }
 
 .shopping-cart{
-    flex: 3;
+    flex: 2;
     /* width: 100%; */
     /* height: 100%; */
     /* overflow-y: auto; */
@@ -66,13 +67,16 @@
 
 .wrapper .input-box {
     display: table-row;
-    /* flex-direction: row;
-    align-items: center; */
-    /* justify-content: center; */
     width: 100%;
-    /* margin: 20px; */
-    /* background-color: rgb(215, 186, 151); */
     margin: 5px;
+}
+
+.wrapper .input-box label {
+    display: table-cell;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(93, 70, 56);
 }
 
 .input-box input {

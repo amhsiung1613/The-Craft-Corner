@@ -65,14 +65,14 @@ function Price({ handleChange, selectedPrice }) {
         handleChange={handleChange}
         value=""
         title="All"
-        name="price"
+        name="range"
         selectedVal={selectedPrice}
       />
         <Input
         handleChange={handleChange}
         value={50}
         title="Less than $50"
-        name="price"
+        name="range"
         selectedVal={selectedPrice}
       />
 
@@ -80,7 +80,7 @@ function Price({ handleChange, selectedPrice }) {
         handleChange={handleChange}
         value={100}
         title="$50 - $100"
-        name="price"
+        name="range"
         selectedVal={selectedPrice}
       />
 
@@ -88,7 +88,7 @@ function Price({ handleChange, selectedPrice }) {
         handleChange={handleChange}
         value={150}
         title="$100 - $150"
-        name="price"
+        name="range"
         selectedVal={selectedPrice}
       />
 
@@ -96,7 +96,7 @@ function Price({ handleChange, selectedPrice }) {
         handleChange={handleChange}
         value={200}
         title="Over $150"
-        name="price"
+        name="range"
         selectedVal={selectedPrice}
       />
     </div>
