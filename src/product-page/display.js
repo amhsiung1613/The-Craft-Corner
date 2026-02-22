@@ -70,9 +70,7 @@ function Display() {
   return (
     <div className="display-layout">
       <Sidebar 
-      handleChange={handleChange} 
-        // handleMaterialChange={handleMaterialChange} 
-        // handlePriceChange={handlePriceChange} 
+        handleChange={handleChange} 
         selectedCategory={selectedCategory}
         selectedMaterial={selectedMaterial}
         selectedPrice={selectedPrice} 
