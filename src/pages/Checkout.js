@@ -1,9 +1,9 @@
-import "./Checkout.css"
+import "..css/Checkout.css";
 import React, { useContext } from "react";
-import ProductList from "../../inventory/ProductList"
-import { CartItem } from "../Cart/cart-item"
-import { ShopContext } from "../../context/shop-context"
-import { useNavigate } from "react-router-dom";
+import ProductList from "../inventory/ProductList"
+import { CartItem } from "../components/cart-item";
+import { ShopContext } from "../context/shop-context"
+import { useRouter } from "next/router";
 // import "../Cart/Cart.css"
 
 const Checkout = () => {
@@ -12,7 +12,7 @@ const Checkout = () => {
   const stateTax = totalAmount * 0.06;
   const shippingCost = totalAmount > 0? 5 : 0;
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className='body'>
@@ -29,13 +29,13 @@ const Checkout = () => {
                 </div>
                 {totalAmount > 0 ? (
                     <div className="checkout">
-                    <button onClick={() => navigate("/products")}> Continue Shopping </button>
+                    <button onClick={() => router.push("/products")}> Continue Shopping </button>
                     </div>
                 ) : (
                     <>
                     <h2> Your Shopping Cart is Empty</h2>
                     <div className="checkout">
-                        <button onClick={() => navigate("/products")}> Continue Shopping </button>
+                        <button onClick={() => router.push("/products")}> Continue Shopping </button>
                     </div>
                     </>
                 )}

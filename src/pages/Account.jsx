@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Account.css";
-import "../Register/Register"
+import "../css/Account.css";
+import "./Register"
  
 const Account = () => {
   return (

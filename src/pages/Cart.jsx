@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
-import { ShopContext } from "../../context/shop-context";
-import productList from "../../inventory/ProductList";
-import { CartItem } from "./cart-item";
-import { useNavigate } from "react-router-dom";
+import { ShopContext } from "../context/shop-context";
+import productList from "../inventory/ProductList";
+import { CartItem } from "../components/cart-item";
+import { useRouter } from "next/router";
 // import "../Checkout/Checkout"
 
-import "./Cart.css";
+import "..css/Cart.css";
 const Cart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
 
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="cart">
@@ -28,11 +28,11 @@ const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Subtotal: ${totalAmount.toFixed(2)} </p>
-          <button onClick={() => navigate("/products")}> Continue Shopping </button>
+          <button onClick={() => router.push("/products")}> Continue Shopping </button>
           <button
             onClick={() => {
               // checkout();
-              navigate("/checkout");
+              router.push ("/checkout");
             }}
           >
             {" "}
@@ -45,7 +45,7 @@ const Cart = () => {
           <h2> Your Shopping Cart is Empty</h2>
         </div>
           <div className="checkout">
-            <button onClick={() => navigate("/products")}> Continue Shopping </button>
+            <button onClick={() => router.push("/products")}> Continue Shopping </button>
           </div>
         </>
       )}

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { usePathname } from "next/navigation";
 // import { BrowserRouter as Router, Routes } from 'react-router-dom';
-import Navigation from "./Navigation/Nav";
-import Products from "./Products/Products1";
+import Navigation from "../product-page/Navigation/Nav";
+import Products from "../product-page/Products/Products1";
 import products from "../inventory/ProductList";
 // import Recommended from "./Recommended/Recomended";
-import Sidebar from "./SideBar/Sidebar";
-import Card from "./Product-Components/Card/Card";
-import "./index.css";
+import Sidebar from "../product-page/SideBar/Sidebar";
+import Card from "../product-page/Product-Components/Card/Card";
+import "..css/index.css";
 
 function Display() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -39,8 +39,8 @@ function Display() {
   };
 
   // ------- URL Filter From Home -------
-  const [searchParams] = useSearchParams();
-  const categoryFromURL = searchParams.get("category");  
+  const pathname = usePathname();
+  const categoryFromURL = pathname.split("?category=")[1];  
 
   useEffect(() => {
     if (categoryFromURL) {

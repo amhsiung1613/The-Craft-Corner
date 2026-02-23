@@ -1,13 +1,13 @@
-import Carousel from '../../components/Carousel';
+import Carousel from '../components/Carousel';
 // import App from "../components/carousel-new/App";
 import React from 'react';
-import { Link } from "react-router-dom";
-import "./Home.css";
+import { Link } from "next/link";
+import "../css/Home.css";
 import Rings from "../../assets/ring-images/gold-rings.jpeg"
 import Necklace from "../../assets/necklace-images/diamond-necklace.jpeg"
 import Earring from "../../assets/earring-images/gold-twist-earring.jpeg"
-import ReviewCarousel from '../../components/review-carousel/ReviewCarousel';
-import reviews from "../../inventory/ReviewList";
+import ReviewCarousel from '../components/review-carousel/ReviewCarousel';
+import reviews from "../inventory/ReviewList";
 
 function Home() {
   

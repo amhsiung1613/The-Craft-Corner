@@ -1,7 +1,9 @@
+'use client'
+
 import { createContext, useEffect, useState } from "react";
 import productList from "../inventory/ProductList";
 
-export const FavContext = createContext(null);
+export const FavContext = createContext({});
 
 const getDefaultFav = () => {
   let fav = {};

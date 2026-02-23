@@ -1,7 +1,9 @@
-import { createContext, useEffect, useState } from "react";
+'use client'
+
+import { createContext, useState } from "react";
 import productList from "../inventory/ProductList";
 
-export const ShopContext = createContext(null);
+export const ShopContext = createContext({});
 
 const getDefaultCart = () => {
   let cart = {};
