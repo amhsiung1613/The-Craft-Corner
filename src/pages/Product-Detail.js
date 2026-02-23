@@ -1,3 +1,8 @@
+import { useParams } from "react-router-dom";
+import FavIconSwitcher from "../../components/FavIconSwitcher"
+import CartIconSwitcher from "../../components/CartIconSwitcher"
+import products from "../../inventory/ProductList";
+import "./Product-Detail.css";
 "use client";
 
 import { useParams } from "next/navigation";
@@ -10,7 +15,6 @@ import products from "../inventory/ProductList";
 import "../css/ProductDetail.css";
 
 function ProductDetail() {
-  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
 
   const product = products.find(p => p.id.toString() === id);
@@ -27,9 +31,11 @@ function ProductDetail() {
     <div className="product-detail">
       <img src={product.image} alt={product.name} />
       <div className="text">
-        <h1>{product.name}
+        <h1>{product.name}</h1>
+        <p>{product.description}</p>
+        <p>${product.price}</p>
         <FavIconSwitcher productId={id}/>
-        </h1>
+        <CartIconSwitcher productId={id}/>
         <h3>${product.price}</h3>
         <p>{product.description}</p>
         <div className="buttons">
