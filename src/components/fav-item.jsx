@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { FavContext } from "../../context/fav-context";
-import FavIconSwitcher from "../../components/FavIconSwitcher"
-import CartIconSwitcher from "../../components/CartIconSwitcher"
+import { FavContext } from "../context/fav-context";
+import FavIconSwitcher from "./FavIconSwitcher"
+import CartIconSwitcher from "./CartIconSwitcher"
 
 export const FavItem = (props) => {
   const { id, name, price, image } = props.data;
