@@ -1,4 +1,4 @@
-import "..css/Checkout.css";
+import "../css/Checkout.css";
 import React, { useContext } from "react";
 import ProductList from "../inventory/ProductList"
 import { CartItem } from "../components/cart-item";

@@ -4,14 +4,15 @@ import React, { useContext } from "react";
 import { FavContext } from "../context/fav-context"
 import productList from "../inventory/ProductList";
 import { FavItem } from "../components/fav-item";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
+import { useNavigate } from "react-router-dom";
 
 import "../css/Favorites.css";
 const Fav = () => {
   const { favItems, getTotalFavAmount } = useContext(FavContext);
   const totalAmount = getTotalFavAmount();
 
-  const router = useRouter();
+  const navigate = useNavigate();
 
   return (
     <div className="fav">
@@ -28,7 +29,7 @@ const Fav = () => {
 
       {totalAmount > 0 ? (
         <div className="checkout">
-          <button onClick={() => router.push("/products")}> Continue Shopping </button>
+          <button onClick={() => navigate("/products")}> Continue Shopping </button>
         </div>
       ) : (
         <>
@@ -36,7 +37,7 @@ const Fav = () => {
             <h2> Your Favorites is Empty</h2>
           </div>
           <div className="checkout">
-            <button onClick={() => router.push("/products")}> Continue Shopping </button>
+            <button onClick={() => navigate("/products")}> Continue Shopping </button>
           </div>
         </>
       )}
