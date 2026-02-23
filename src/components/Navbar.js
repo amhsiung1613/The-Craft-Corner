@@ -2,8 +2,8 @@
 
 import React, { useState, useContext } from 'react'
 import Logo from "../assets/logo.png";
-import Link from 'next/link';
-import Image from 'next/image';
+import { Link } from 'react-router-dom';
+// import Image from 'next/image';
 // import { useRouter } from "next/router";
 import ReorderIcon from '@mui/icons-material/Reorder';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -22,26 +22,26 @@ function Navbar() {
   return (
     <div className="navbar">
         <div className="leftSide" id={openLinks ? "open" : "close"}>
-          <Link href = "/home" passHref>
-            <Image src={Logo.src} alt="Logo" width={80} height={80} style={{ cursor: 'pointer'}}/>
+          <Link to="/home">
+            <img src={Logo.src} alt="Logo" width={80} height={80} style={{ cursor: 'pointer'}}/>
           </Link>
           <div className="hiddenLinks">
-            <Link href="/home"> Home </Link>
-            <Link href="/products"> Products </Link>
+            <Link to="/home"> Home </Link>
+            <Link to="/products"> Products </Link>
             {/* <Link to="/search"> Search </Link> */}
-            <Link href="/favorites"> Favorites </Link>
-            <Link href="/cart" > Cart </Link> 
+            <Link to="/favorites"> Favorites </Link>
+            <Link to="/cart" > Cart </Link> 
             {/* <Link to="/account"> Account </Link> */}
-            <Link href="/about"> About </Link>
+            <Link to="/about"> About </Link>
           </div>
         </div>
         <div className="rightSide">
-          <Link href="/products"> Products </Link>
+          <Link to="/products"> Products </Link>
           {/* <Link to="/search"> Search </Link> */}
-          <Link href="/favorites"> Favorites </Link>
-          <Link href="/cart" > Cart </Link>
+          <Link to="/favorites"> Favorites </Link>
+          <Link to ="/cart" > Cart </Link>
           {/* <Link to="/account"> Account </Link> */}
-          <Link href="/about"> About </Link>
+          <Link to="/about"> About </Link>
           
           <button onClick={toggleNavbar}>
             <ReorderIcon />

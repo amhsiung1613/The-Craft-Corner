@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 // import { ShopContext } from "../../context/shop-context";
 import { FavContext } from "../context/fav-context"
 import productList from "../inventory/ProductList";
-import { FavItem } from "../components/fav-item";
+import {FavItem} from "../components/fav-item";
 // import { useRouter } from "next/router";
 import { useNavigate } from "react-router-dom";
 
@@ -22,7 +22,12 @@ const Fav = () => {
       <div className="content">
         {productList.map((product) => {
           if (favItems[product.id] !== 0) {
-            return <FavItem data={product} />;
+            return (
+              <FavItem
+                key={product.id}
+                data={product}
+              />
+            );
           }
         })}
       </div>

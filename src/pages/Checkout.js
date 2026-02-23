@@ -3,7 +3,8 @@ import React, { useContext } from "react";
 import ProductList from "../inventory/ProductList"
 import { CartItem } from "../components/cart-item";
 import { ShopContext } from "../context/shop-context"
-import { useRouter } from "next/router";
+import { useNavigate } from "react-router-dom";
+// import { useRouter } from "next/router";
 // import "../Cart/Cart.css"
 
 const Checkout = () => {
@@ -12,7 +13,7 @@ const Checkout = () => {
   const stateTax = totalAmount * 0.06;
   const shippingCost = totalAmount > 0? 5 : 0;
 
-  const router = useRouter();
+  const navigate = useNavigate();
 
   return (
     <div className='body'>
@@ -22,20 +23,25 @@ const Checkout = () => {
                 <h1>Your Cart</h1>
                 <div className="cart">
                     {ProductList.map((product) => {
-                    if (cartItems[product.id] !== 0) {
-                        return <CartItem data={product} />;
-                    }
-                    })}
+                        if (cartItems[product.id] !== 0) {
+                            return (
+                            <CartItem
+                                key={product.id}
+                                data={product}
+                            />
+                            );
+                        }
+                        })}
                 </div>
                 {totalAmount > 0 ? (
                     <div className="checkout">
-                    <button onClick={() => router.push("/products")}> Continue Shopping </button>
+                    <button onClick={() => navigate("/products")}> Continue Shopping </button>
                     </div>
                 ) : (
                     <>
                     <h2> Your Shopping Cart is Empty</h2>
                     <div className="checkout">
-                        <button onClick={() => router.push("/products")}> Continue Shopping </button>
+                        <button onClick={() => navigate("/products")}> Continue Shopping </button>
                     </div>
                     </>
                 )}

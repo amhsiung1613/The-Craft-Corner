@@ -14,17 +14,19 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
+    color: rgb(93, 70, 56);
 }
 
 .fav .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-left: 8rem;
     margin-right: 8rem;
     /* margin-top: 2rem; */
-    z-index: -2;
+    z-index: 0;
 }
 
 .favItem {
@@ -42,8 +44,17 @@
     margin-bottom: 1rem;
 }
 
+.favItem .description {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-title {
     margin-bottom: 1rem;
+    color: rgb(93, 70, 56);
 }
 
 .fav .checkout {

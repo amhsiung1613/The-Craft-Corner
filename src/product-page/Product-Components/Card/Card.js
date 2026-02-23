@@ -14,7 +14,6 @@ const Card = ({ id, image, name, price }) => {
   
   return (
     <>
-    
       <section className="card">
         <Link to={`/products/${id}`} className="card-link">
           <img src={image} alt={name} className="card-img" />
@@ -23,7 +22,7 @@ const Card = ({ id, image, name, price }) => {
         <div className="card-details">
           <section className="card-price">
             <div className="price">
-              ${price}
+              <p>Price: ${price}</p>
             </div> 
             <div className="bag">
               <FavIconSwitcher productId={id}/>
