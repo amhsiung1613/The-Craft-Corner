@@ -18,6 +18,8 @@
   width: 200px;
   height: 175px;
   margin-bottom: 1rem;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .card-title {

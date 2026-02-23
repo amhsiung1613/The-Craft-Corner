@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 // import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products1";
@@ -36,7 +37,16 @@ function Display() {
       }
       
   };
-  
+
+  // ------- URL Filter From Home -------
+  const [searchParams] = useSearchParams();
+  const categoryFromURL = searchParams.get("category");  
+
+  useEffect(() => {
+    if (categoryFromURL) {
+      setSelectedCategory(categoryFromURL);
+    }
+  }, [categoryFromURL]);
 
   // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
@@ -64,8 +74,6 @@ function Display() {
   .filter(product =>
     !selectedPrice || product.range === selectedPrice
   );
-
-
 
   return (
     <div className="display-layout">

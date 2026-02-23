@@ -21,7 +21,7 @@ const ProductList=[
         range: 50,
         material: "gold",
         category: "earring",
-        description: "These stunning black gold earrings are the perfect accessory to add a touch of elegance and sophistication to any outfit. Crafted with high-quality materials, these earrings feature a sleek and modern design that is sure to turn heads. The black gold finish gives them a unique and edgy look, making them a versatile choice for both casual and formal occasions. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, these black gold earrings are sure to make a statement."
+        description: "These stunning black gold earrings are the perfect accessory to add a touch of elegance and sophistication to any outfit. Crafted with high-quality materials, these earrings feature a sleek and modern design that is sure to turn heads. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, these black gold earrings are sure to make a statement."
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const ProductList=[
         range: 50,
         material:"silver",
         category: "earring",
-        description: "These beautiful glass bead earrings are the perfect accessory to add a pop of color and sparkle to any outfit. Crafted with high-quality materials, these earrings feature a unique design that combines the elegance of glass beads with the durability of metal. The vibrant colors of the beads create a stunning visual effect, making these earrings a versatile choice for both casual and formal occasions. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, these glass bead earrings are sure to make a statement."
+        description: "These beautiful glass bead earrings are the perfect accessory to add a pop of color and sparkle to any outfit. The vibrant colors of the beads create a stunning visual effect, making these earrings a versatile choice for both casual and formal occasions. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, these glass bead earrings are sure to make a statement."
     },
     {
         id: 3,
@@ -41,7 +41,7 @@ const ProductList=[
         range: 100,
         material:"gold",
         category: "ring",
-        description: "This exquisite gold rectangle ring is the perfect accessory to add a touch of sophistication and elegance to any outfit. Crafted with high-quality materials, this ring features a sleek and modern design that is sure to turn heads. The rectangular shape adds a unique and contemporary twist to the classic gold ring, making it a versatile choice for both casual and formal occasions. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, this gold rectangle ring is sure to make a statement."
+        description: "This exquisite gold ring is the perfect accessory to add a touch of sophistication and elegance to any outfit. Crafted with high-quality materials, this ring features a sleek and modern design that is sure to turn heads. The irregular gem adds a unique and contemporary twist to the classic gold ring, making it a versatile choice for both casual and formal occasions. Whether you're dressing up for a night out or adding a stylish touch to your everyday look, this gold rectangle ring is sure to make a statement."
     },
     {
         id: 4,

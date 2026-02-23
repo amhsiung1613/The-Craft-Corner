@@ -64,3 +64,8 @@
     cursor: pointer;
     margin: 5px;
 }
+
+.fav .checkout button:active {
+  background: rgb(224, 200, 170);
+  color: rgb(93, 70, 56);
+}

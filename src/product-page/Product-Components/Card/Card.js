@@ -14,15 +14,17 @@ const Card = ({ id, image, name, price }) => {
   
   return (
     <>
-    <Link to={`/products/${id}`} className="card-link">
+    
       <section className="card">
-        <img src={image} alt={name} className="card-img" />
-        <div className="card-details">
+        <Link to={`/products/${id}`} className="card-link">
+          <img src={image} alt={name} className="card-img" />
           <h3 className="card-title">{name}</h3>
+        </Link>
+        <div className="card-details">
           <section className="card-price">
             <div className="price">
               ${price}
-            </div>
+            </div> 
             <div className="bag">
               <FavIconSwitcher productId={id}/>
               <CartIconSwitcher productId={id}/>
@@ -30,7 +32,7 @@ const Card = ({ id, image, name, price }) => {
           </section>
         </div>
       </section>
-    </Link>
+    
     </>
   );
 };

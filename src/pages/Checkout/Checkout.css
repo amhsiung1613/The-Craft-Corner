@@ -122,6 +122,11 @@
     font-weight: 700;
 }
 
+.checkout button:active {
+  background: rgb(224, 200, 170);
+  color: rgb(93, 70, 56);
+}
+
 .credit-card button {
     display: flex;
     flex-direction: column;
@@ -137,4 +142,9 @@
     font-size: 16px;
     color: rgb(215, 186, 151);
     font-weight: 700;
+}
+
+.credit-card button:active {
+  background: rgb(224, 200, 170);
+  color: rgb(93, 70, 56);
 }
