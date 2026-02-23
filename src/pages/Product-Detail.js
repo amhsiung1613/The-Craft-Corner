@@ -1,20 +1,13 @@
-import { useParams } from "react-router-dom";
-import FavIconSwitcher from "../../components/FavIconSwitcher"
-import CartIconSwitcher from "../../components/CartIconSwitcher"
-import products from "../../inventory/ProductList";
-import "./Product-Detail.css";
-"use client";
-
-import { useParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useParams, useNavigate } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "../components/FavIconSwitcher"
 // import addToCart from "../../components/CartIconSwitcher"
 import products from "../inventory/ProductList";
-import "../css/ProductDetail.css";
+import "../css/Product-Detail.css";
 
 function ProductDetail() {
+  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
 
   const product = products.find(p => p.id.toString() === id);
@@ -23,7 +16,7 @@ function ProductDetail() {
     return <div>Product not found</div>;
   }
 
-  const router = useRouter();
+  const navigate = useNavigate();
   const { updateCartItemCount } =
     useContext(ShopContext);
 
@@ -31,11 +24,9 @@ function ProductDetail() {
     <div className="product-detail">
       <img src={product.image} alt={product.name} />
       <div className="text">
-        <h1>{product.name}</h1>
-        <p>{product.description}</p>
-        <p>${product.price}</p>
+        <h1>{product.name}
         <FavIconSwitcher productId={id}/>
-        <CartIconSwitcher productId={id}/>
+        </h1>
         <h3>${product.price}</h3>
         <p>{product.description}</p>
         <div className="buttons">
@@ -55,7 +46,7 @@ function ProductDetail() {
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
           <button onClick={(e) => updateCartItemCount(quantity, id)}>Add to Cart</button>
-          <button onClick={() => router.push("/products")}> Continue Shopping </button>
+          <button onClick={() => navigate("/products")}> Continue Shopping </button>
         </div>
       </div>
     </div>
