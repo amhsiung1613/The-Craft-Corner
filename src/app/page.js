@@ -1,4 +1,4 @@
-import Home from "../pages/Home"; // temporary until you move it
+import Home from "../components/Home"; // temporary until you move it
 
 export default function Page() {
   return <Home />;
