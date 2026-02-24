@@ -1,14 +1,14 @@
 import React from 'react';
 import Logo from "../assets/logo.png";
-import "../css/About.css";
+import styles from "../css/About.module.css";
 
 function About() {
   return (
-    <div className="about">
-      <div className="aboutTop" >
+    <div className={styles.about}>
+      <div className={styles.aboutTop} >
         <img src={Logo.src} alt="Logo" />
       </div>
-      <div className="aboutBottom">
+      <div className={styles.aboutBottom}>
         <h1>
           About Us!
         </h1>

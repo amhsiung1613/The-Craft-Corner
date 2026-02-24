@@ -3,12 +3,12 @@ import React from 'react'
 // import TwitterIcon from "@mui/icons-material/Twitter";
 // import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import "../css/Footer.css";
+import styles from "../css/Footer.module.css";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="socialMedia">
+    <div className={styles["footer"]}>
+      <div className={styles["socialMedia"]}>
         {/* <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> */}
         <a href="https://www.linkedin.com/in/amber-hsiung-073b2b23b/" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon />

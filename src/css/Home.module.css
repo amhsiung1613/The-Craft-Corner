@@ -1,4 +1,4 @@
-h2{
+.categories-title {
     /* position: absolute;  */
     display: flex;
     align-items: center;
@@ -17,8 +17,7 @@ h2{
 
 .categories .card {
     width: 260px;
-    padding: 30px;
-    
+    padding: 30px;    
 }
 
 .categories .card .img{
@@ -36,6 +35,7 @@ h2{
     align-items: center;
     justify-content: center;
     padding: 20px;
+    color: rgba(93, 70, 56, 1);
 }
 
 .reviews {

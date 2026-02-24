@@ -2,9 +2,9 @@
 // import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 // import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import FavIconSwitcher from "../../../components/FavIconSwitcher"
-import CartIconSwitcher from "../../../components/CartIconSwitcher"
+import Link from "next/link";
+import FavIconSwitcher from "../../../FavIconSwitcher";
+import CartIconSwitcher from "../../../CartIconSwitcher";
 import "./Card.css"
 // import { ShopContext } from "../../../context/shop-context";
 
@@ -15,7 +15,7 @@ const Card = ({ id, image, name, price }) => {
   return (
     <>
       <section className="card">
-        <Link to={`/products/${id}`} className="card-link">
+        <Link href={`/products/${id}`} className="card-link">
           <img src={image} alt={name} className="card-img" />
           <h3 className="card-title">{name}</h3>
         </Link>

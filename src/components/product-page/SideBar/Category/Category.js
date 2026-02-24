@@ -4,8 +4,9 @@ import Input from "../../Product-Components/Input";
 function Category({ handleChange, selectedCategory }) {
   return (
     <>
+    <div className="category-filter">
       <h2 className="sidebar-title">Category</h2>      
-      <div className="category-filter">
+      
         <label className="sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="category" checked={selectedCategory === ""}/>
           <span className="checkmark"></span>All

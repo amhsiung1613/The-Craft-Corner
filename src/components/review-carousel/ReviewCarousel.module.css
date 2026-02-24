@@ -23,11 +23,13 @@
   color: rgb(224, 200, 170);
   margin-bottom: 1rem;
 }
-.button {
+
+.carousel button {
   font-size: 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
+  color: rgb(224, 200, 170);
 }
 
 .stars {

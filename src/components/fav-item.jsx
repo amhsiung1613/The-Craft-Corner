@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 // import { FavContext } from "../context/fav-context";
 import FavIconSwitcher from "./FavIconSwitcher";
 import CartIconSwitcher from "./CartIconSwitcher";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 // import "../product-page/Product-Components/Card/Card.css"
+import styles from "../css/Favorites.module.css";
 
 export const FavItem = (props) => {
   const { id, name, price, image } = props.data;
@@ -11,14 +12,14 @@ export const FavItem = (props) => {
 //     useContext(FavContext);
 
   return (
-    <div className="favItem">
-      <Link to={`/products/${id}`} className="card-link">
-        <img src={image} alt={name} className="card-img" />
-        <h3 className="card-title">{name}</h3>
+    <div className={styles["favItem"]}>
+      <Link href={`/products/${id}`} className={styles["card-link"]}>
+        <img src={image} alt={name} className={styles["card-img"]} />
+        <h3 className={styles["card-title"]}>{name}</h3>
       </Link>
-      <div className="description">
+      <div className={styles["description"]}>
         <p> Price: ${price}</p>
-        <div className="bag">
+        <div className={styles["bag"]}>
           <FavIconSwitcher productId={id}/>
           <CartIconSwitcher productId={id}/>
         </div>

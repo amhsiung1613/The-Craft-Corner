@@ -1,4 +1,4 @@
-nav {
+.nav-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -7,7 +7,7 @@ nav {
     margin-right: 15%;
 }
   
-input {
+.search-input {
     padding-inline-start: 20px;
     border: none;
     background: #faebd7;

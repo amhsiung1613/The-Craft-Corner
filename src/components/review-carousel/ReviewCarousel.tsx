@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from "react";
-import "./ReviewCarousel.css";
+import styles from "./ReviewCarousel.module.css";
 import type { Review } from "../../inventory/ReviewList";
 
 type ReviewProp = {
@@ -16,11 +18,11 @@ function ReviewCarousel({ reviews }: ReviewProp) {
   const review = reviews[index];
 
   return (
-    <div className="carousel">
+    <div className={styles["carousel"]}>
        <button onClick={() => setIndex((prev) => prev === 0 ? reviews.length - 1 : prev - 1)}> ‹ </button>
 
-      <div className="review-card">
-        <p className="stars">
+      <div className={styles["review-card"]}>
+        <p className={styles["stars"]}>
           {"★".repeat(review.rating)}
           {"☆".repeat(5 - review.rating)}
         </p>
