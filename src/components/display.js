@@ -11,7 +11,7 @@ import Sidebar from "./product-page/SideBar/Sidebar";
 import Card from "./product-page/Product-Components/Card/Card";
 import "../css/index.css";
 
-function Display() {
+export default function Display() {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedMaterial, setSelectedMaterial] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
@@ -101,4 +101,4 @@ function Display() {
   );
 }
 
-export default Display;
+// export default Display;
