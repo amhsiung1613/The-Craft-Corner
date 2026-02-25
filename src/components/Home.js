@@ -7,7 +7,7 @@ import Rings from "../assets/ring-images/gold-rings.jpeg"
 import Necklace from "../assets/necklace-images/diamond-necklace.jpeg"
 import Earring from "../assets/earring-images/gold-twist-earring.jpeg"
 import ReviewCarousel from './review-carousel/ReviewCarousel';
-import reviews from "../../inventory/ReviewList";
+import reviews from "../inventory/ReviewList";
 
 function Home() {
   
