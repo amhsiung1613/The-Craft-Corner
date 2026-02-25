@@ -1,4 +1,7 @@
-import { useParams, useNavigate } from "react-router-dom";
+"use client";
+
+// import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useRouter } from "next/navigation";
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
@@ -16,7 +19,7 @@ function ProductDetail() {
     return <div>Product not found</div>;
   }
 
-  const navigate = useNavigate();
+  const navigate = useRouter();
   const { updateCartItemCount } =
     useContext(ShopContext);
 
@@ -46,7 +49,7 @@ function ProductDetail() {
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
           <button onClick={(e) => updateCartItemCount(quantity, id)}>Add to Cart</button>
-          <button onClick={() => navigate("/products")}> Continue Shopping </button>
+          <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
       </div>
     </div>

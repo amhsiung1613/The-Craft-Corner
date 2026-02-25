@@ -52,10 +52,17 @@
 }
 
 .cartItem .description .countHandler button {
-  width: 30px;
-  border: 2px solid rgb(93, 70, 56);
-  /* background: rgb(215, 186, 151); */
-  color: rgb(93, 70, 56);
+  width: auto;
+  height: 30px;
+  background: rgb(93, 70, 56);
+  color: rgb(224, 200, 170);
+  border: none;
+  /* color: white; */
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 0px 10px;
+  margin: 5px;
+  border-radius: 25px;
 }
 
 /* .checkout {

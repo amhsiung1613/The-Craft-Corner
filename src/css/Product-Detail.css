@@ -41,14 +41,16 @@
     margin-bottom: 10px;
 }
 
-.buttons {
+/* .product-detail .text .buttons */
+
+.product-detail .text .buttons {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
 }
 
-button {
+.product-detail .text .buttons button {
   width: auto;
   height: 30px;
   background: rgb(93, 70, 56);
@@ -62,7 +64,14 @@ button {
   border-radius: 25px;
 }
 
-button:active {
+.product-detail .text .buttons button:active {
     background: rgb(224, 200, 170);
     color: rgb(93, 70, 56);
+}
+
+.product-detail .text .buttons input {
+    text-align: center;
+    font-size: 1.2em;
+    border: 1px solid rgb(93, 70, 56);
+    border-radius: 5px;
 }

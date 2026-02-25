@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useContext } from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import FavoriteIcon from '@mui/icons-material/Favorite';
