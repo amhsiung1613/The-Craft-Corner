@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -12,13 +12,22 @@ a {
 
 li {
   list-style: none;
+} */
+
+.displayLayout{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
 }
 
-.display-content h1{
+.displayContent h1{
   font-size: 30px;
   text-align: center;
+  justify-content: center;
   margin-right: 15%;
   color: rgb(93, 70, 56);
+  padding: 10px;
 }
 
 .btns {
@@ -32,17 +41,17 @@ li {
   cursor: pointer;
 }
 
-.display-layout {
+/* .display-layout {
   display: flex;
   flex: 1;
-}
+} */
 
-.sidebar {
+/* .sidebar {
   width: 250px;
   background-color: rgb(237, 223, 213);
-}
+} */
 
-.display-content {
+.displayContent {
   flex: 1;
   padding: 20px;
 }

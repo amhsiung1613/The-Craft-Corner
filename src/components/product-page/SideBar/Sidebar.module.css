@@ -1,15 +1,13 @@
-/* .sidebar {
-  padding-top: 15vh;
+.sidebar {
+  padding-top: 100px;
   background-color: rgb(237, 223, 213);
-  width: 30vh;
-  position: absolute;
+  width: 260px;
   min-height: 100vh;
   border-right: 2px solid rgb(224, 200, 170);
-  z-index: -1;
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   align-items: center;
-} */
+}
 
 .logo-container {
   margin-bottom: 4rem;

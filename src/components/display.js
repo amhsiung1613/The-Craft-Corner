@@ -9,9 +9,10 @@ import products from "../inventory/ProductList";
 // import Recommended from "./Recommended/Recomended";
 import Sidebar from "./product-page/SideBar/Sidebar";
 import Card from "./product-page/Product-Components/Card/Card";
-import "../css/index.css";
+import styles from "../css/index.module.css";
 
 export default function Display() {
+  // console.log("DISPLAY LOADED");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedMaterial, setSelectedMaterial] = useState("");
   const [selectedPrice, setSelectedPrice] = useState("");
@@ -78,7 +79,7 @@ export default function Display() {
   );
 
   return (
-    <div className="display-layout">
+    <div className={styles.displayLayout}>
       <Sidebar 
         handleChange={handleChange} 
         selectedCategory={selectedCategory}
@@ -86,7 +87,7 @@ export default function Display() {
         selectedPrice={selectedPrice} 
       />
       
-      <div className="display-content">
+      <div className={styles.displayContent}>
         <h1>All Products</h1>
         <Navigation query={query} handleInputChange={handleInputChange} />
         {/* <Recommended handleClick={handleClick} /> */}
