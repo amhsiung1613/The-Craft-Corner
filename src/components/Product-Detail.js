@@ -10,13 +10,10 @@ import Alert from "@mui/material/Alert";
 import products from "../inventory/ProductList";
 import "../css/Product-Detail.css";
 
-function AddItemToCart(quantity, id) {
-  const { updateCartItemCount } =
-    useContext(ShopContext);
-    
-  updateCartItemCount(quantity, id);
-  AddItemAlert();
-}
+// function AddItemToCart(quantity, id) {
+//   updateCartItemCount(quantity, id);
+//   AddItemAlert();
+// }
 
 function AddItemAlert() {
   return <Alert severity="success">Added to cart!</Alert>;
@@ -33,6 +30,8 @@ function ProductDetail() {
   }
 
   const navigate = useRouter();
+  const { updateCartItemCount } =
+    useContext(ShopContext);
 
   return (
     <div className="product-detail">
@@ -59,7 +58,7 @@ function ProductDetail() {
             <button onClick={() => 
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
-          <button onClick={() => AddItemToCart(quantity, id)}>Add to Cart</button>
+          <button onClick={() => { AddItemAlert(); updateCartItemCount(quantity, id); }}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
       </div>
