@@ -20,18 +20,28 @@ type ImageSliderProps = {
 export function ImageSlider({ images }: ImageSliderProps) {
   const [imageIndex, setImageIndex] = useState(0)
 
+  // function showNextImage() {
+  //   setImageIndex(index => {
+  //     if (index === images.length - 1) return 0
+  //     return index + 1
+  //   })
+  // }
+
+  // function showPrevImage() {
+  //   setImageIndex(index => {
+  //     if (index === 0) return images.length - 1
+  //     return index - 1
+  //   })
+  // }
+
   function showNextImage() {
-    setImageIndex(index => {
-      if (index === images.length - 1) return 0
-      return index + 1
-    })
+    setImageIndex(index => (index + 1) % images.length)
   }
 
   function showPrevImage() {
-    setImageIndex(index => {
-      if (index === 0) return images.length - 1
-      return index - 1
-    })
+    setImageIndex(index => 
+      (index - 1 + images.length) % images.length
+    )
   }
 
   return (
