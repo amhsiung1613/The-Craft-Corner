@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useContext } from "react";
 import { CartItem } from "./cart-item";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
