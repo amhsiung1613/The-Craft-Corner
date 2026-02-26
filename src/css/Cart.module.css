@@ -32,6 +32,8 @@
   height: 175px;
   /* margin-bottom: 1rem; */
   padding-left: 30px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .cartItem .description {

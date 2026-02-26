@@ -2,6 +2,11 @@
   color: rgb(93, 70, 56);
 }
 
+.card .card-img{
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .card .price{
   color: rgb(93, 70, 56);
 }
