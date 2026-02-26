@@ -12,6 +12,10 @@ import "../css/Product-Detail.css";
 
 function AddItemToCart(quantity, id) {
   updateCartItemCount(quantity, id);
+  AddItemAlert();
+}
+
+function AddItemAlert() {
   return <Alert severity="success">Added to cart!</Alert>;
 }
 
