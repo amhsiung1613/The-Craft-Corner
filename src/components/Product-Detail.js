@@ -16,16 +16,10 @@ import "../css/Product-Detail.css";
 //   AddItemAlert();
 // }
 
-function AddItemAlert() {
-  return <Alert variant="outlined" severity="success">
-    <AlertTitle>Success</AlertTitle>
-    Added to cart!
-    </Alert>;
-}
-
 function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
+  const [showAlert, setShowAlert] = useState(false);
 
   const product = products.find(p => p.id.toString() === id);
 
@@ -46,7 +40,14 @@ function ProductDetail() {
         </h1>
         <h3>${product.price}</h3>
         <p>{product.description}</p>
+
         <div className="buttons">
+          {showAlert && (
+            <Alert variant="outlined" severity="success">
+              <AlertTitle>Success</AlertTitle>
+              Added to cart!
+            </Alert>
+          )}
           <div className="countHandler">
             <button onClick={() =>
               setQuantity((prev) => (prev > 1 ? prev - 1 : 1))}> - </button>
@@ -62,7 +63,11 @@ function ProductDetail() {
             <button onClick={() => 
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
-          <button onClick={() => { AddItemAlert(); updateCartItemCount(quantity, id); }}>Add to Cart</button>
+          <button onClick={() => { 
+            updateCartItemCount(quantity, id); 
+            setShowAlert(true); 
+            setTimeout(() => setShowAlert(false), 3000); 
+          }}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
       </div>
