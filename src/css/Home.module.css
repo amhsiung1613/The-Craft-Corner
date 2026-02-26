@@ -18,7 +18,8 @@
 .categories .card {
     width: 260px;
     padding: 30px;  
-    border: 2px solid rgba(93, 70, 56, 1);  
+    border: 1px solid rgb(93, 70, 56);  
+    border-radius: 25px;
 }
 
 .categories .card .img{
