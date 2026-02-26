@@ -48,7 +48,7 @@
 .favItem .description {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
 }
