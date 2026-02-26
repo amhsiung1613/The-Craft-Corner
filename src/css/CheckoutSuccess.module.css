@@ -12,6 +12,7 @@
 
 .success-page p{
     max-width: 460px;
+    text-align: center;
 }
 
 .success-page .cart {
@@ -27,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
+    width: 100%;
     height: 30px;
     background: rgb(93, 70, 56);
     border: none;
