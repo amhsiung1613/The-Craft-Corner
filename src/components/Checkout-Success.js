@@ -1,7 +1,12 @@
 import { CartItem } from "./cart-item";
+import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
+import { useRouter } from "next/navigation";
 
 function CheckoutSuccess() {
+
+    const navigate = useRouter();
+    
     return (
         <div className={styles["success-page"]} >
             <h1> Thank you for your purchase!</h1>
@@ -25,6 +30,10 @@ function CheckoutSuccess() {
                 It may take a couple minutes to send. We will send you your tracking number when 
                 your items are shipped. Thank you for shopping with us! 
             </p>
+
+            <div className={styles["checkout"]}>
+                <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+            </div>
         </div>
     )
 

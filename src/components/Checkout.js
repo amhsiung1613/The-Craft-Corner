@@ -37,7 +37,7 @@ const Checkout = () => {
                 </div>
                 {totalAmount > 0 ? (
                     <div className={styles["checkout"]}>
-                    <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+                        <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
                     </div>
                 ) : (
                     <>
