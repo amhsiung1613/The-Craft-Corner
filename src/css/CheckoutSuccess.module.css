@@ -1,5 +1,6 @@
 
 .success-page {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +12,7 @@
 }
 
 .success-page p{
-    max-width: 460px;
+    max-width: 600px;
     text-align: center;
 }
 
