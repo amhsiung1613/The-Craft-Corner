@@ -24,7 +24,7 @@ function ProductDetail() {
   }
 
   const navigate = useRouter();
-  const { updateCartItemCount } =
+  const { updateCartItemCount, addToCart } =
     useContext(ShopContext);
 
   return (
