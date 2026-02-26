@@ -66,7 +66,7 @@ function ProductDetail() {
         </div>
         {showAlert && (
             <Alert variant="outlined" severity="success">
-              <AlertTitle>Success</AlertTitle>
+              {/* <AlertTitle>Success</AlertTitle> */}
               Added to cart!
             </Alert>
           )}
