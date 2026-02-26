@@ -1,6 +1,17 @@
 
+.success-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 .success-page h1, .success-page h2, .success-page p{
     color: rgb(93, 70, 56);
+}
+
+.success-page p{
+    max-width: 60px;
 }
 
 .success-page .cart {
