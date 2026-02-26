@@ -36,7 +36,7 @@ export const ShopContextProvider = (props) => {
   };
 
   const updateCartItemCount = (newAmount, itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + newAmount }));
   };
 
   const checkout = () => {
