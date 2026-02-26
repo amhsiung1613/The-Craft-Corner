@@ -37,13 +37,13 @@ const Checkout = () => {
                 </div>
                 {totalAmount > 0 ? (
                     <div className={styles["checkout"]}>
-                        <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+                        <button onClick={() => navigate.push("/products")}> Back to Products </button>
                     </div>
                 ) : (
                     <>
                     <h2 className={styles["empty-cart"]}> Your Shopping Cart is Empty</h2>
                     <div className={styles["checkout"]}>
-                        <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+                        <button onClick={() => navigate.push("/products")}> Back to Products </button>
                     </div>
                     </>
                 )}

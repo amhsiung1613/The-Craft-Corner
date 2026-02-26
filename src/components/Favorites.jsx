@@ -35,7 +35,7 @@ const Fav = () => {
 
       {totalAmount > 0 ? (
         <div className={styles.checkout}>
-          <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+          <button onClick={() => navigate.push("/products")}> Back to Products </button>
         </div>
       ) : (
         <>
@@ -43,7 +43,7 @@ const Fav = () => {
             <h2> Your Favorites is Empty</h2>
           </div>
           <div className={styles.checkout}>
-            <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+            <button onClick={() => navigate.push("/products")}> Back to Products </button>
           </div>
         </>
       )}
