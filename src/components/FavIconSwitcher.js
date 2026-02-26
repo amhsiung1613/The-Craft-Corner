@@ -26,7 +26,7 @@ function IconSwitcher({ productId }) {
 
   return (
     <IconButton onClick={toggleIcon}>
-      {isInFav ? <FavoriteIcon color='red'/> : <FavoriteBorderIcon />}
+      {isInFav ? <FavoriteIcon htmlColor='red'/> : <FavoriteBorderIcon />}
     </IconButton>
   );
 }
