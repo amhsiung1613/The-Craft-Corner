@@ -12,15 +12,9 @@ import AlertTitle from '@mui/material/AlertTitle';
 import products from "../inventory/ProductList";
 import "../css/Product-Detail.css";
 
-// function AddItemToCart(quantity, id) {
-//   updateCartItemCount(quantity, id);
-//   AddItemAlert();
-// }
-
 function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
-  const [showAlert, setShowAlert] = useState(false);
   const [open, setOpen] = useState(false);
 
   const product = products.find(p => p.id.toString() === id);
@@ -62,8 +56,6 @@ function ProductDetail() {
           <button onClick={() => { 
             updateCartItemCount(quantity, id); 
             setOpen(true);
-            // setShowAlert(true); 
-            // setTimeout(() => setShowAlert(false), 3000); 
           }}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
@@ -72,7 +64,7 @@ function ProductDetail() {
         open={open}
         autoHideDuration={3000}
         onClose={() => setOpen(false)}
-        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <Alert severity="success" variant="filled">
           Added to cart!
