@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
+import { Snackbar } from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import AlertTitle from '@mui/material/AlertTitle';
 // import addToCart from "../../components/CartIconSwitcher"
@@ -20,6 +21,7 @@ function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   const [showAlert, setShowAlert] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const product = products.find(p => p.id.toString() === id);
 
@@ -59,18 +61,23 @@ function ProductDetail() {
           </div>
           <button onClick={() => { 
             updateCartItemCount(quantity, id); 
-            setShowAlert(true); 
-            setTimeout(() => setShowAlert(false), 3000); 
+            setOpen(true);
+            // setShowAlert(true); 
+            // setTimeout(() => setShowAlert(false), 3000); 
           }}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
-        {showAlert && (
-            <Alert variant="outlined" severity="success">
-              {/* <AlertTitle>Success</AlertTitle> */}
-              Added to cart!
-            </Alert>
-          )}
       </div>
+      <Snackbar
+        open={open}
+        autoHideDuration={3000}
+        onClose={() => setOpen(false)}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert severity="success" variant="filled">
+          Added to cart!
+        </Alert>
+      </Snackbar>
     </div>
   );
 }
