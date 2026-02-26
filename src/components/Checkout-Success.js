@@ -34,7 +34,7 @@ function CheckoutSuccess() {
                 It may take a couple minutes to send. We will send you your tracking number when 
                 your items are shipped. Thank you for shopping with us! 
             </p>
-
+            
             <div className={styles["checkout"]}>
                 <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
             </div>

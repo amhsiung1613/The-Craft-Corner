@@ -26,6 +26,9 @@
   padding: 20px;
 }
 
+.success-page .checkout {
+    margin: 10px;
+}
 .success-page .checkout button{
     display: flex;
     flex-direction: column;
