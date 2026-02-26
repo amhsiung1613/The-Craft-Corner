@@ -1,0 +1,14 @@
+
+.success-page h1, .success-page h2, .success-page p{
+    color: rgb(93, 70, 56);
+}
+
+.success-page .cart {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+

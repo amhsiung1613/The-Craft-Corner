@@ -1,0 +1,33 @@
+import { CartItem } from "./cart-item";
+import styles from "../css/CheckoutSuccess.module.css";
+
+function CheckoutSuccess() {
+    return (
+        <div className={styles["success-page"]} >
+            <h1> Thank you for your purchase!</h1>
+
+            <h2>Items purchased today: </h2>
+
+            <div className={styles["cart"]}>
+                {ProductList.map((product) => {
+                    if (cartItems[product.id] !== 0) {
+                        return (
+                        <CartItem
+                            key={product.id}
+                            data={product}
+                        />
+                        );
+                    }
+                    })}
+            </div>
+
+            <p>We have received your order. You should receive a confirmation email from us soon. 
+                It may take a couple minutes to send. We will send you your tracking number when 
+                your items are shipped. Thank you for shopping with us! 
+            </p>
+        </div>
+    )
+
+}
+
+export default CheckoutSuccess
