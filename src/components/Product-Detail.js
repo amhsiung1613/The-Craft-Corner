@@ -5,9 +5,15 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
+import Alert from "@mui/material/Alert";
 // import addToCart from "../../components/CartIconSwitcher"
 import products from "../inventory/ProductList";
 import "../css/Product-Detail.css";
+
+function AddItemToCart(quantity, id) {
+  updateCartItemCount(quantity, id);
+  return <Alert severity="success">Added to cart!</Alert>;
+}
 
 function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
@@ -48,7 +54,7 @@ function ProductDetail() {
             <button onClick={() => 
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
-          <button onClick={(e) => updateCartItemCount(quantity, id)}>Add to Cart</button>
+          <button onClick={() => AddItemToCart(quantity, id)}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
       </div>
