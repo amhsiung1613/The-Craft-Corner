@@ -11,6 +11,9 @@ import products from "../inventory/ProductList";
 import "../css/Product-Detail.css";
 
 function AddItemToCart(quantity, id) {
+  const { updateCartItemCount } =
+    useContext(ShopContext);
+    
   updateCartItemCount(quantity, id);
   AddItemAlert();
 }
@@ -30,8 +33,6 @@ function ProductDetail() {
   }
 
   const navigate = useRouter();
-  const { updateCartItemCount } =
-    useContext(ShopContext);
 
   return (
     <div className="product-detail">
