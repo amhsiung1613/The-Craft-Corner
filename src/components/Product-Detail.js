@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
-import { Snackbar } from "@mui/material/Snackbar";
+import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import AlertTitle from '@mui/material/AlertTitle';
 // import addToCart from "../../components/CartIconSwitcher"
