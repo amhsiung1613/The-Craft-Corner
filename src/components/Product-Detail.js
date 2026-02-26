@@ -54,10 +54,11 @@ function ProductDetail() {
               setQuantity((prev) => prev + 1)}> + </button>
           </div>
           <button onClick={() => { 
-            updateCartItemCount(quantity, id); 
+            // updateCartItemCount(quantity, id); 
+            addToCart(id);
             setOpen(true);
           }}>Add to Cart</button>
-          <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+          <button onClick={() => navigate.push("/products")}> Back to Products </button>
         </div>
       </div>
       <Snackbar
