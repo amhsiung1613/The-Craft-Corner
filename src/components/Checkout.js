@@ -69,7 +69,9 @@ const Checkout = () => {
                         <label id="credit-card-cvv">CVV: </label>
                         <input type='password' id="credit-card-cvv" placeholder='CVV' required maxLength={3}/>
                     </div>
-
+                    <div className={styles["checkout"]}>
+                        <button onClick={() => navigate.push("/checkout-success")}> Checkout </button>
+                    </div>
                     {/* <input className="input-box" type="submit" value="Checkout"/> */}
                 </form>
 
