@@ -14,7 +14,7 @@ function CheckoutSuccess() {
     return (
         <div className={styles["success-page"]} >
             <h1> Thank you for your purchase!</h1>
-
+            <br/>
             <h2>Items purchased today: </h2>
 
             <div className={styles["cart"]}>
@@ -34,9 +34,10 @@ function CheckoutSuccess() {
                 It may take a couple minutes to send. We will send you your tracking number when 
                 your items are shipped. Thank you for shopping with us! 
             </p>
-            
+            <br/>
+
             <div className={styles["checkout"]}>
-                <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
+                <button onClick={() => navigate.push("/products")}> Back to Products </button>
             </div>
         </div>
     )
