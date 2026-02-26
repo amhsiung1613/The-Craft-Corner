@@ -1,3 +1,5 @@
+"use client";
+
 import { CartItem } from "./cart-item";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
@@ -6,7 +8,7 @@ import { useRouter } from "next/navigation";
 function CheckoutSuccess() {
 
     const navigate = useRouter();
-    
+
     return (
         <div className={styles["success-page"]} >
             <h1> Thank you for your purchase!</h1>
