@@ -53,6 +53,10 @@
     align-items: center;
 }
 
+.favItem FavoriteIcon{
+    color: rgb(192, 16, 16);
+}
+
 .card-title {
     margin-bottom: 1rem;
     color: rgb(93, 70, 56);
