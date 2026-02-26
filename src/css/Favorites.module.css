@@ -82,6 +82,10 @@
   background: rgb(93, 70, 56);
   color: rgb(215, 186, 151);
   border: none;
-  /* color: white; */
   font-weight: bolder;
+}
+
+.fav .checkout button:active {
+    background: rgb(224, 200, 170);
+    color: rgb(93, 70, 56);
 }
