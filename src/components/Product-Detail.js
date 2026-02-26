@@ -6,6 +6,7 @@ import React, { useState, useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
 import Alert from "@mui/material/Alert";
+import AlertTitle from '@mui/material/AlertTitle';
 // import addToCart from "../../components/CartIconSwitcher"
 import products from "../inventory/ProductList";
 import "../css/Product-Detail.css";
@@ -16,7 +17,10 @@ import "../css/Product-Detail.css";
 // }
 
 function AddItemAlert() {
-  return <Alert severity="success">Added to cart!</Alert>;
+  return <Alert variant="outlined" severity="success">
+    <AlertTitle>Success</AlertTitle>
+    Added to cart!
+    </Alert>;
 }
 
 function ProductDetail() {
