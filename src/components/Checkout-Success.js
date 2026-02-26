@@ -4,9 +4,10 @@ import { CartItem } from "./cart-item";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
 import { useRouter } from "next/navigation";
+import { ShopContext } from "../context/shop-context";
 
 function CheckoutSuccess() {
-
+    const { cartItems } = useContext(ShopContext);
     const navigate = useRouter();
 
     return (

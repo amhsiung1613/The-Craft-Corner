@@ -69,9 +69,6 @@ const Checkout = () => {
                         <label id="credit-card-cvv">CVV: </label>
                         <input type='password' id="credit-card-cvv" placeholder='CVV' required maxLength={3}/>
                     </div>
-                    <div className={styles["checkout"]}>
-                        <button onClick={() => navigate.push("/checkout-success")}> Checkout </button>
-                    </div>
                     {/* <input className="input-box" type="submit" value="Checkout"/> */}
                 </form>
 
@@ -122,7 +119,9 @@ const Checkout = () => {
                     Total: ${(totalAmount + stateTax + shippingCost).toFixed(2)}
                 </p>
 
-                <button type="submit" className={styles["purchase-button"]}>Purchase</button>
+                <div className={styles["checkout"]}>
+                    <button onClick={() => navigate.push("/checkout-success")}> Checkout </button>
+                </div>
 
 
                 <p style={{ fontSize: '12px', marginTop: '20px' }}> *This is a demo website. No actual purchases will be made. </p>
