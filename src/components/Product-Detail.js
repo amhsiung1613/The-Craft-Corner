@@ -42,12 +42,6 @@ function ProductDetail() {
         <p>{product.description}</p>
 
         <div className="buttons">
-          {showAlert && (
-            <Alert variant="outlined" severity="success">
-              <AlertTitle>Success</AlertTitle>
-              Added to cart!
-            </Alert>
-          )}
           <div className="countHandler">
             <button onClick={() =>
               setQuantity((prev) => (prev > 1 ? prev - 1 : 1))}> - </button>
@@ -70,6 +64,12 @@ function ProductDetail() {
           }}>Add to Cart</button>
           <button onClick={() => navigate.push("/products")}> Continue Shopping </button>
         </div>
+        {showAlert && (
+            <Alert variant="outlined" severity="success">
+              <AlertTitle>Success</AlertTitle>
+              Added to cart!
+            </Alert>
+          )}
       </div>
     </div>
   );
