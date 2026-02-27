@@ -14,7 +14,7 @@ function CheckoutSuccess() {
     const navigate = useRouter();
 
     const handleCheckout = () => {
-        navigate.push("/checkout-success");
+        navigate.push("/products");
         checkout();              // clears the cart
     };
 
