@@ -13,6 +13,11 @@ function CheckoutSuccess() {
     const { cartItems, checkout } = useContext(ShopContext);
     const navigate = useRouter();
 
+    const handleCheckout = () => {
+        checkout();              // clears the cart
+        navigate.push("/checkout-success");
+    };
+
     return (
         <div className={styles["success-page"]} >
             <h1> Thank you for your purchase!</h1>
@@ -39,10 +44,7 @@ function CheckoutSuccess() {
             <br/>
 
             <div className={styles["checkout"]}>
-                <button onClick={() => {
-                    navigate.push("/products");
-                    checkout;
-                }}> Back to Products </button>
+                <button onClick={handleCheckout}> Back to Products </button>
             </div>
         </div>
     )

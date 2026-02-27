@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    /* gap: 20px; */
 }
 .success-page h1, .success-page h2, .success-page p{
     color: rgb(93, 70, 56);
@@ -53,12 +52,10 @@
 }
 
 .ProductCard {
-    /* height: 350px; */
     width: 250px;
     margin: 20px;
     border: 2px solid #ededed;
     padding: 20px;
-    /* cursor: pointer; */
     border-radius: 25px;
 }
 
@@ -78,7 +75,6 @@
 .ProductCard .description {
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
     justify-content: center;
     align-items: center;
 }

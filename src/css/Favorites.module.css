@@ -25,12 +25,10 @@
     align-items: center;
     margin-left: 8rem;
     margin-right: 8rem;
-    /* margin-top: 2rem; */
     z-index: 0;
 }
 
 .favItem {
-    /* height: 350px; */
     width: 250px;
     margin: 20px;
     border: 2px solid #ededed;
@@ -48,7 +46,6 @@
 .favItem .description {
     display: flex;
     flex-direction: row;
-    /* gap: 10px; */
     justify-content: center;
     align-items: center;
 }
