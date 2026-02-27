@@ -20,7 +20,7 @@
 .success-page .cart {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px;
