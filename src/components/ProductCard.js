@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./product-page/Product-Components/Card/Card.css"
 import { ShopContext } from "../context/shop-context";
 
-const ProductCard = () => {
+export const ProductCard = () => {
   const { cartItems } = useContext(ShopContext);
   // const cartItemCount = cartItems[id];
   
@@ -24,4 +24,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+// export default ProductCard;
