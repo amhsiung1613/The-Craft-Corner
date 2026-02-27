@@ -23,7 +23,7 @@ function CheckoutSuccess() {
                     if (cartItems[product.id] !== 0) {
                         return (
                         <ProductCard
-                            // key={product.id}
+                            key={product.id}
                             data={product}
                         />
                         );
