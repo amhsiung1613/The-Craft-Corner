@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useContext } from "react";
-import { CartItem } from "./cart-item";
-import ProductCard from "../components/ProductCard";
+// import { CartItem } from "./cart-item";
+import { ProductCard } from "../components/ProductCard";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
 import { useRouter } from "next/navigation";
@@ -22,7 +22,7 @@ function CheckoutSuccess() {
                 {ProductList.map((product) => {
                     if (cartItems[product.id] !== 0) {
                         return (
-                        <CartItem
+                        <ProductCard
                             key={product.id}
                             data={product}
                         />
