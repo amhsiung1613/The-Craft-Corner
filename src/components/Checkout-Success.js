@@ -23,7 +23,7 @@ function CheckoutSuccess() {
                 {ProductList.map((product) => {
                     if (cartItems[product.id] !== 0) {
                         return (
-                        <FavItem
+                        <ProductCard
                             key={product.id}
                             data={product}
                         />
