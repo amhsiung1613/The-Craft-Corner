@@ -120,7 +120,7 @@ const Checkout = () => {
                 </p>
 
                 <div className={styles["checkout"]}>
-                    <button onClick={() => navigate.push("/checkout-success")}> Checkout </button>
+                    <button onClick={() => navigate.push("/checkoutsuccess")}> Checkout </button>
                 </div>
 
 
