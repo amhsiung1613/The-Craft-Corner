@@ -12,7 +12,7 @@ export const ProductCard = (props) => {
 //     useContext(FavContext);
 
   return (
-    <div className={styles["favItem"]}>
+    <div className={styles["ProductCard"]}>
       {/* <Link href={`/products/${id}`} className={styles["card-link"]}> */}
       <img src={image} alt={name} className={styles["card-img"]} />
       <h3 className={styles["card-title"]}>{name}</h3>

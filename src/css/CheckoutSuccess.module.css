@@ -52,23 +52,30 @@
     color: rgb(93, 70, 56);
 }
 
-.success-page .cart .ProductCard {
+.ProductCard {
     /* height: 350px; */
     width: 250px;
     margin: 20px;
     border: 2px solid #ededed;
     padding: 20px;
-    cursor: pointer;
+    /* cursor: pointer; */
     border-radius: 25px;
 }
 
-.success-page .cart .ProductCard img {
+.ProductCard .card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(93, 70, 56);
+}
+
+.ProductCard .card-img {
     width: 200px;
     height: 175px;
     margin-bottom: 1rem;
 }
 
-.success-page .cart .ProductCard .description {
+.ProductCard .description {
     display: flex;
     flex-direction: row;
     /* gap: 10px; */
