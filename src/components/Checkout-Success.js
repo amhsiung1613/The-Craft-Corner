@@ -41,7 +41,7 @@ function CheckoutSuccess() {
             <div className={styles["checkout"]}>
                 <button onClick={() => {
                     navigate.push("/products");
-                    // checkout;
+                    checkout;
                 }}> Back to Products </button>
             </div>
         </div>
