@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 // import { CartItem } from "./cart-item";
-import { Card } from "../components/product-page/Product-Components/Card/Card";
+import Card from "../components/product-page/Product-Components/Card/Card";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
 import { useRouter } from "next/navigation";
