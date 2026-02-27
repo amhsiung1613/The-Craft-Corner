@@ -1,27 +1,29 @@
 import React, { useContext } from "react";
-import "./product-page/Product-Components/Card/Card.css"
-import { ShopContext } from "../context/shop-context";
+// import { FavContext } from "../context/fav-context";
+// import FavIconSwitcher from "./FavIconSwitcher";
+// import CartIconSwitcher from "./CartIconSwitcher";
+// import Link from "next/link";
+// import "../product-page/Product-Components/Card/Card.css"
+import styles from "../css/Favorites.module.css";
 
-export const ProductCard = () => {
-  const { cartItems } = useContext(ShopContext);
-  // const cartItemCount = cartItems[id];
-  
+export const FavItem = (props) => {
+  const { id, name, price, image } = props.data;
+//   const { favItems, addToFav, removeFromFav, updateFavItemCount } =
+//     useContext(FavContext);
+
   return (
-    <>
-      <section className="card">
-        <img src={cartItems.image} className="card-img" />
-        <h3 className="card-title">{cartItems.name}</h3>
-        <div className="card-details">
-          <section className="card-price">
-            <div className="price">
-              <p>Price: ${cartItems.price}</p>
-            </div> 
-          </section>
-        </div>
-      </section>
-    
-    </>
+    <div className={styles["favItem"]}>
+      {/* <Link href={`/products/${id}`} className={styles["card-link"]}> */}
+      <img src={image} alt={name} className={styles["card-img"]} />
+      <h3 className={styles["card-title"]}>{name}</h3>
+      {/* </Link> */}
+      <div className={styles["description"]}>
+        <p> Price: ${price}</p>
+        {/* <div className={styles["bag"]}>
+          <FavIconSwitcher productId={id}/>
+          <CartIconSwitcher productId={id}/>
+        </div> */}
+      </div>
+    </div>
   );
 };
-
-// export default ProductCard;

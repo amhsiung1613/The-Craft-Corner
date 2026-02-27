@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useContext } from "react";
-import { FavItem } from "./fav-item";
+// import { FavItem } from "./fav-item";
 // import { CartItem } from "./cart-item";
-// import { ProductCard } from "../components/ProductCard";
+import { ProductCard } from "./ProductItem";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
 import { useRouter } from "next/navigation";
