@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./product-page/Product-Components/Card/Card.css"
-// import { ShopContext } from "../../../context/shop-context";
+import { ShopContext } from "../context/shop-context";
 
 const ProductCard = () => {
   const { cartItems } = useContext(ShopContext);
