@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 // import CartIconSwitcher from "./CartIconSwitcher";
 // import Link from "next/link";
 // import "../product-page/Product-Components/Card/Card.css"
-import styles from "../css/Favorites.module.css";
+import styles from "../css/CheckoutSuccess.module.css";
 
 export const ProductCard = (props) => {
   const { id, name, price, image } = props.data;
