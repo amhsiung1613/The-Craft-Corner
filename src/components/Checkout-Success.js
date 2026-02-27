@@ -3,7 +3,7 @@
 import React, { useContext } from "react";
 // import { FavItem } from "./fav-item";
 // import { CartItem } from "./cart-item";
-import { ProductCard } from "./ProductItem";
+import { ProductCard } from "./ProductCard";
 import ProductList from "../inventory/ProductList"
 import styles from "../css/CheckoutSuccess.module.css";
 import { useRouter } from "next/navigation";

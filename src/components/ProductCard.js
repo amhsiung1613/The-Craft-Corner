@@ -6,7 +6,7 @@ import React, { useContext } from "react";
 // import "../product-page/Product-Components/Card/Card.css"
 import styles from "../css/Favorites.module.css";
 
-export const FavItem = (props) => {
+export const ProductCard = (props) => {
   const { id, name, price, image } = props.data;
 //   const { favItems, addToFav, removeFromFav, updateFavItemCount } =
 //     useContext(FavContext);
