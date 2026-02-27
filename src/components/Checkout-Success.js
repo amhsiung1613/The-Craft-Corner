@@ -14,7 +14,9 @@ function CheckoutSuccess() {
 
     return (
         <div className={styles["success-page"]} >
-            console.log("SUCCESS cartItems:", cartItems);
+            <script >
+                console.log("SUCCESS cartItems:", cartItems);
+            </script>
             <h1> Thank you for your purchase!</h1>
             <br/>
             <h2>Items purchased today: </h2>

@@ -19,7 +19,6 @@ const Checkout = () => {
 
   return (
     <div className={styles["body"]}>
-        console.log("SUCCESS cartItems:", cartItems);
         {/* <span> */}
         <div className={styles["wrapper"]}>
             <div className={styles["shopping-cart"]}>
