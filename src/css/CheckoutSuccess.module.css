@@ -52,9 +52,26 @@
     color: rgb(93, 70, 56);
 }
 
-/* .success-page .cart .ProductCard .description {
+.success-page .cart .ProductCard {
+    /* height: 350px; */
+    width: 250px;
+    margin: 20px;
+    border: 2px solid #ededed;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.success-page .cart .ProductCard img {
+    width: 200px;
+    height: 175px;
+    margin-bottom: 1rem;
+}
+
+.success-page .cart .ProductCard .description {
     display: flex;
     flex-direction: row;
+    /* gap: 10px; */
     justify-content: center;
     align-items: center;
-} */
+}
