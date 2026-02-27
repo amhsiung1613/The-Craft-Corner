@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 import { ShopContext } from "../context/shop-context";
 
 function CheckoutSuccess() {
-    const { cartItems } = useContext(ShopContext);
+    const { cartItems, checkout } = useContext(ShopContext);
     const navigate = useRouter();
 
     return (
@@ -38,7 +38,10 @@ function CheckoutSuccess() {
             <br/>
 
             <div className={styles["checkout"]}>
-                <button onClick={() => navigate.push("/products")}> Back to Products </button>
+                <button onClick={() => {
+                    navigate.push("/products");
+                    // checkout;
+                }}> Back to Products </button>
             </div>
         </div>
     )
