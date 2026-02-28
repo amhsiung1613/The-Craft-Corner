@@ -59,7 +59,7 @@ export default function Display() {
   const breadcrumbPages = categoryFromURL
     ? [
         {
-          name: categoryFromURL.charAt(0).toUpperCase() + categoryFromURL.slice(1),
+          name: selectedCategory,
           link: "",
         },
       ]
