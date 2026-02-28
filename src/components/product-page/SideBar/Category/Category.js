@@ -13,21 +13,21 @@ function Category({ handleChange, selectedCategory }) {
         </label>
         <Input
           handleChange={handleChange}
-          value="earring"
+          value="Earrings"
           title="Earrings"
           name="category"
           selectedVal={selectedCategory}
         />
         <Input
           handleChange={handleChange}
-          value="necklace"
+          value="Necklaces"
           title="Necklaces"
           name="category"
           selectedVal={selectedCategory}
         />
         <Input
           handleChange={handleChange}
-          value="ring"
+          value="Rings"
           title="Rings"
           name="category"
           selectedVal={selectedCategory}
@@ -38,46 +38,3 @@ function Category({ handleChange, selectedCategory }) {
 }
 
 export default Category;
-
-
-// import Input from "../../Product-Components/Input";
-// import "./Category.css";
-
-// function Category({ handleChange, selectedCategory }) {
-//   return (
-//     <div className="category-filter">
-//       <h2 className="sidebar-title">Category</h2>
-
-//       <Input
-//         handleChange={handleChange}
-//         value=""
-//         title="All"
-//         name="category"
-//         selectedVal={selectedCategory}
-//       />
-//       <Input
-//         handleChange={handleChange}
-//         value="earring"
-//         title="Earrings"
-//         name="category"
-//         selectedVal={selectedCategory}
-//       />
-//       <Input
-//         handleChange={handleChange}
-//         value="necklace"
-//         title="Necklaces"
-//         name="category"
-//         selectedVal={selectedCategory}
-//       />
-//       <Input
-//         handleChange={handleChange}
-//         value="ring"
-//         title="Rings"
-//         name="category"
-//         selectedVal={selectedCategory}
-//       />
-//     </div>
-//   );
-// }
-
-// export default Category;
