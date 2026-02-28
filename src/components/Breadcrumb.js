@@ -8,10 +8,10 @@ const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
 // Going through a loop to construct the list item of the name and link from the array of objects passed in.
     let breadCrumbs = pages.map((page, index) => {
 // If name and link is present in the data.
-        if (page.link) return <li key={ index } className="breadcrumb-item">
+        if (page.link) return <li key={ index } className={styles.breadcrumb-item}>
             <Link href={ page.link }> { page.name }</Link></li>
 // If just a name is present in the data.
-        return <li key={ index } className="breadcrumb-item active" aria-current="page">{ page.name }</li>
+        return <li key={ index } className={styles.breadcrumb-item} aria-current="page">{ page.name }</li>
     })
 
     return (
