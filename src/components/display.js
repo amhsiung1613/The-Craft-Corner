@@ -96,9 +96,9 @@ export default function Display() {
     <div className={styles.displayLayout}>
       <Sidebar 
         handleChange={handleChange} 
-        selectedCategory={selectedCategory}
-        selectedMaterial={selectedMaterial}
-        selectedPrice={selectedPrice} 
+        setSelectedCategory={selectedCategory}
+        setSelectedMaterial={selectedMaterial}
+        setSelectedPrice={selectedPrice} 
       />
       
       <div className={styles.displayContent}>
