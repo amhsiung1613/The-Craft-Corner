@@ -19,18 +19,18 @@ function Home() {
       {/* </div> */}
       <h2 className={styles["categories-title"]}>Categories</h2>
       <div className={styles["categories"]}>
-        <Link href="/products?category=ring" className={styles["card"]}>
+        <Link href="/products?category=Rings" className={styles["card"]}>
           <img src={Rings.src} alt="Rings" className={styles["img"]}/>
           <h3 className={styles["title"]}>Rings</h3>
         </Link>
 
-        <Link href="/products?category=necklace" className={styles["card"]}>
-          <img src={Necklace.src} alt="Necklace" className={styles["img"]}/>
+        <Link href="/products?category=Necklaces" className={styles["card"]}>
+          <img src={Necklace.src} alt="Necklaces" className={styles["img"]}/>
           <h3 className={styles["title"]}>Necklaces</h3>
         </Link>
 
-        <Link href="/products?category=earring" className={styles["card"]}>
-          <img src={Earring.src} alt="Earring" className={styles["img"]}/>
+        <Link href="/products?category=Earrings" className={styles["card"]}>
+          <img src={Earring.src} alt="Earrings" className={styles["img"]}/>
           <h3 className={styles["title"]}>Earrings</h3>
         </Link>
       </div>
