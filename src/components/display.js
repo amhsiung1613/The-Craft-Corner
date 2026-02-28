@@ -1,5 +1,7 @@
 "use client";
 
+
+import Breadcrumb from './Breadcrumb';
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 // import { BrowserRouter as Router, Routes } from 'react-router-dom';
@@ -10,6 +12,7 @@ import products from "../inventory/ProductList";
 import Sidebar from "./product-page/SideBar/Sidebar";
 import Card from "./product-page/Product-Components/Card/Card";
 import styles from "../css/index.module.css";
+import Link from '@mui/material/Link';
 
 export default function Display() {
   // console.log("DISPLAY LOADED");
@@ -88,6 +91,7 @@ export default function Display() {
       />
       
       <div className={styles.displayContent}>
+        <Breadcrumb pages={[{name: 'Products', link: '/products'}]}/>
         <h1>All Products</h1>
         <Navigation query={query} handleInputChange={handleInputChange} />
         {/* <Recommended handleClick={handleClick} /> */}
