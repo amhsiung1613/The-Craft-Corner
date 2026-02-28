@@ -33,6 +33,10 @@ function ProductDetail() {
   ? [
       {
         name: product.category,
+        link: `/products?category=${product.category}`,
+      },
+      {
+        name: product.name,
         link: "",
       },
     ]
