@@ -7,9 +7,10 @@ import { ShopContext } from "../context/shop-context";
 import FavIconSwitcher from "./FavIconSwitcher"
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
-import AlertTitle from '@mui/material/AlertTitle';
+// import AlertTitle from '@mui/material/AlertTitle';
 // import addToCart from "../../components/CartIconSwitcher"
 import products from "../inventory/ProductList";
+import BreadCrumb from "./Breadcrumb";
 import "../css/Product-Detail.css";
 
 function ProductDetail() {
@@ -24,12 +25,24 @@ function ProductDetail() {
   }
 
   const navigate = useRouter();
-  const { updateCartItemCount, addToCart } =
+  const { updateCartItemCount} =
     useContext(ShopContext);
 
+
+  const breadcrumbPages = product.category
+  ? [
+      {
+        name: product.category,
+        link: "",
+      },
+    ]
+  : [];
   return (
     <div className="product-detail">
-      <img src={product.image} alt={product.name} />
+      <div className="navigation">
+        <BreadCrumb pages={breadcrumbPages} />
+        <img src={product.image} alt={product.name} />
+      </div>
       <div className="text">
         <h1>{product.name}
         <FavIconSwitcher productId={id}/>

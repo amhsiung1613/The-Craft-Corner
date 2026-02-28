@@ -8,6 +8,11 @@
     gap: 40px;
 }
 
+.product-detail .navigation {
+    display: flex;
+    flex-direction: column;
+}
+
 .product-detail img {
     max-width: 600px;
     width: 100%;
