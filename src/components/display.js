@@ -1,7 +1,7 @@
 "use client";
 
 
-import Breadcrumb from './Breadcrumb';
+import Breadcrumb from '@/components/Breadcrumb';
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 // import { BrowserRouter as Router, Routes } from 'react-router-dom';
@@ -54,6 +54,17 @@ export default function Display() {
     }
   }, [categoryFromURL]);
 
+  // -----------breadcrumbs nav---------------
+
+  const breadcrumbPages = categoryFromURL
+    ? [
+        {
+          name: categoryFromURL.charAt(0).toUpperCase() + categoryFromURL.slice(1),
+          link: "",
+        },
+      ]
+    : [];
+
   // ----------- Input Filter -----------
   const [query, setQuery] = useState("");
 
@@ -91,7 +102,7 @@ export default function Display() {
       />
       
       <div className={styles.displayContent}>
-        <Breadcrumb pages={[{name: 'Products', link: '/products'}]}/>
+        <BreadCrumb pages={breadcrumbPages} />
         <h1>All Products</h1>
         <Navigation query={query} handleInputChange={handleInputChange} />
         {/* <Recommended handleClick={handleClick} /> */}
