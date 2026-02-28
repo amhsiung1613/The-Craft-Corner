@@ -1,7 +1,7 @@
 // Imports
 import Link from 'next/link'
 import PropTypes from 'prop-types'
-import styles from "../css/Breadcrumb.module.css"
+import "../css/Breadcrumb.css"
 
 // Breadcrumb component with default values
 const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
