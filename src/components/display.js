@@ -56,7 +56,7 @@ export default function Display() {
 
   // -----------breadcrumbs nav---------------
 
-  const breadcrumbPages = categoryFromURL
+  const breadcrumbPages = selectedCategory
     ? [
         {
           name: selectedCategory,
