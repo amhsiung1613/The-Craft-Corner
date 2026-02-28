@@ -1,6 +1,7 @@
 // Imports
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+import styles from "../css/Breadcrumb.module.css"
 
 // Breadcrumb component with default values
 const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
@@ -16,8 +17,8 @@ const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
     return (
         <>
             <nav aria-label="breadcrumb">
-                <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link href="/products">Products</Link></li>
+                <ol className={styles.breadcrumb}>
+                    <li className={styles.breadcrumb-item}><Link href="/products">Products</Link></li>
                     { breadCrumbs }
                 </ol>
             </nav>

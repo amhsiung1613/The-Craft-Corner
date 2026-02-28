@@ -12,7 +12,6 @@ import products from "../inventory/ProductList";
 import Sidebar from "./product-page/SideBar/Sidebar";
 import Card from "./product-page/Product-Components/Card/Card";
 import styles from "../css/index.module.css";
-import Link from '@mui/material/Link';
 
 export default function Display() {
   // console.log("DISPLAY LOADED");
