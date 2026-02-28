@@ -1,7 +1,7 @@
 "use client";
 
 
-import Breadcrumb from '@/components/Breadcrumb';
+import BreadCrumb from './Breadcrumb';
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 // import { BrowserRouter as Router, Routes } from 'react-router-dom';
