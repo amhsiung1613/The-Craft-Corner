@@ -11,7 +11,7 @@ const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
         if (page.link) return <li key={ index } className={styles.breadcrumb-item}>
             <Link href={ page.link }> { page.name }</Link></li>
 // If just a name is present in the data.
-        return <li key={ index } className={styles.breadcrumb-item} aria-current="page">{ page.name }</li>
+        return <li key={ index } className="breadcrumb-item active" aria-current="page">{ page.name }</li>
     })
 
     return (
