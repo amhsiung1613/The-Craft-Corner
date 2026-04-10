@@ -15,7 +15,7 @@ function Home() {
     <div className={styles["home"]}>
       <br></br>
       {/* <div> */}
-        <Carousel />
+        {/* <Carousel /> */}
       {/* </div> */}
       <h2 className={styles["categories-title"]}>Categories</h2>
       <div className={styles["categories"]}>
