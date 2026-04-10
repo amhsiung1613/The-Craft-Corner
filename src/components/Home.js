@@ -13,10 +13,7 @@ function Home() {
   
   return (
     <div className={styles["home"]}>
-      {/* <br></br> */}
-      {/* <div> */}
-        <Carousel />
-      {/* </div> */}
+      <Carousel />
       <h2 className={styles["categories-title"]}>Categories</h2>
       <div className={styles["categories"]}>
         <Link href="/products?category=Rings" className={styles["card"]}>
