@@ -20,8 +20,8 @@ function Navbar() {
   };
 
   return (
-    <div className={styles.navbar}>
-        <div className={styles.leftSide} id={openLinks ? "open" : "close"}>
+    <div className={styles.navbar} id={openLinks ? "open" : "close"}>
+        <div className={styles.leftSide}>
           <Link href="/home" passHref>
             <Image src={Logo.src} alt="Logo" width={80} height={80} style={{ cursor: 'pointer'}}/>
           </Link>
