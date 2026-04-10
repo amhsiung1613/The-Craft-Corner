@@ -1,11 +1,13 @@
-/* .carousel {
-    width: 100vw;
-    height: 25vw;
-    overflow: hidden;
-    position: relative;
+.carousel {
+    max-width: 1550px;
+    width: 100%;
+    max-height: 20vw;
+    height: 100%;
+    aspect-ratio: 10 / 6;
+    margin: 0 auto;
 }
 
-.carousel img {
+/* .carousel img {
     position: relative;
     top: 50%;
     left: 50%;
