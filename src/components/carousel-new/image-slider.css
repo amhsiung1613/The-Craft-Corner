@@ -46,7 +46,16 @@
   padding: 1rem;
   cursor: pointer;
   transition: background-color 100ms ease-in-out;
+  align-items: center;
   /* height: 24vw; */
+}
+
+.img-slider-btn.prev {
+  left: 0;
+}
+
+.img-slider-btn.next {
+  right: 0;
 }
 
 .img-slider-btn:hover,
