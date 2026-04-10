@@ -149,3 +149,9 @@
     animation: squish 200ms ease-in-out;
   }
 }
+
+@media (max-width: 600px) {
+  .img-slider-dots {
+    display: none;
+  }
+}
