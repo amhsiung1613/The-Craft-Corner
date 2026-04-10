@@ -3,7 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
 }
 
 .categories-title {
