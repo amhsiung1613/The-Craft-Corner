@@ -13,7 +13,7 @@ function Home() {
   
   return (
     <div className={styles["home"]}>
-      <br></br>
+      {/* <br></br> */}
       {/* <div> */}
         <Carousel />
       {/* </div> */}
