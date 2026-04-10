@@ -18,7 +18,7 @@
 .review-card p, .review-card h4{
   font-size: 1.2rem;
   color: rgb(224, 200, 170);
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
 }
 
 .carousel button {
@@ -31,5 +31,5 @@
 
 .stars {
   color: rgb(224, 200, 170);
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
 }
