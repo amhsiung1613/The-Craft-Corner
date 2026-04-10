@@ -7,7 +7,7 @@
 } */
 
 .categories-title {
-    /* position: absolute;  */
+    position: absolute; 
     display: flex;
     align-items: center;
     justify-content: center;
