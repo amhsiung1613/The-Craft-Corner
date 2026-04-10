@@ -10,7 +10,7 @@
   height: 24vw;
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* TRACK */
@@ -41,7 +41,7 @@
 .img-slider-btn {
   all: unset;
   display: flex;
-  position: relative;
+  position: absolute;
   top: 0;
   bottom: 0;
   padding: 1rem;
@@ -79,7 +79,7 @@
 
 /* DOT CONTAINER */
 .img-slider-dots {
-  position: absolute;
+  position: relative;
   bottom: .5rem;
   left: 50%;
   transform: translateX(-50%);
