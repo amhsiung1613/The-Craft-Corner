@@ -131,14 +131,14 @@
 .rightSide {
   display: flex;
   align-items: center;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
 }
 
 .rightSide a {
   color: rgb(93, 70, 56);
   text-decoration: none;
   margin-left: 25px;
-  /* font-size: 16px; */
+  font-size: 16px;
 }
 
 /* MENU BUTTON */
@@ -163,10 +163,10 @@
 .open .hiddenLinks {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   position: absolute;
   top: 80px;
-  /* left: 0; */
+  left: 0;
   width: 100%;
   background-color: rgb(224, 200, 170);
   padding: 20px 0;
