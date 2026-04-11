@@ -37,3 +37,9 @@
     /* align-items: center; */
     transform: translateY(-40px);
 }
+
+@media (maxwidth: 600px){
+    .about .aboutTop {
+        height: 20%;
+    }
+}
