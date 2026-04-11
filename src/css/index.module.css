@@ -4,6 +4,8 @@
   flex-direction: row;
   gap: 20px;
   flex: 1;
+  justify-content: center;
+  align-items: center;
 }
 
 .displayContent h1{
