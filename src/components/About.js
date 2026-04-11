@@ -15,8 +15,8 @@ function About() {
         <p className={styles.aboutText}>
         Hi there! My name is Amber and I am a UX/UI designer and web developer.<br/><br/>
         This is my very first UX/UI and web development project. <br/><br/>
-        I created the initial UX/UI project for the Google UX Design Certificate and decided to take it <br/>a step further by creating an actual website for it.
-        My goal for this project was to create a jewelry e-commerce website <br/>that is simple, elegant, and easy to navigate.
+        I created the initial UX/UI project for the Google UX Design Certificate and decided to take it a step further by creating an actual website for it.
+        My goal for this project was to create a jewelry e-commerce website that is simple, elegant, and easy to navigate.
         I am still working to improve this site but I hope you enjoy it! <br/> <br/>
         Feel free to reach out to me at <a href="mailto:amberhsiung@gmail.com">amberhsiung@gmail.com</a> or LinkedIn at <a href="https://www.linkedin.com/in/amber-hsiung-073b2b23b/">Amber Hsiung</a>. <br/><br/>
         </p>
