@@ -124,7 +124,7 @@ const Checkout = () => {
                 </div>
 
 
-                <p style={{ fontSize: '12px', marginTop: '20px' }}> *This is a demo website. No actual purchases will be made. </p>
+                <p style={{ fontSize: '12px' }}> *This is a demo website. No actual purchases will be made. </p>
             
             </div>
         {/* </span> */}
