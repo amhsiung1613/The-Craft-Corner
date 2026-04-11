@@ -38,8 +38,8 @@
     transform: translateY(-40px);
 }
 
-@media (maxwidth: 600px){
-    .about .aboutTop {
-        height: 20vh;
+@media (max-width: 600px){
+    .aboutTop {
+        height: 10vh;
     }
 }
