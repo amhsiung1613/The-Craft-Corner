@@ -1,7 +1,7 @@
 .sidebar {
   padding-top: 100px;
   background-color: rgb(237, 223, 213);
-  width: 260px;
+  width: 160px;
   min-height: 100vh;
   border-right: 2px solid rgb(224, 200, 170);
   display: flex;
