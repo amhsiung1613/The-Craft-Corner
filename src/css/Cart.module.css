@@ -31,7 +31,7 @@
   width: 300px;
   height: 150px;
   /* margin-bottom: 1rem; */
-  padding-left: 30px;
+  padding: 30px 5px 0px 5px;
   overflow: hidden;
   object-fit: cover;
 }
