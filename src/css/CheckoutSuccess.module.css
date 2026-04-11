@@ -80,3 +80,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    .success-page h1 {
+        font-size: 1.5em;
+    }
+}
