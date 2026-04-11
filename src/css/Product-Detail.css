@@ -16,6 +16,7 @@
 .product-detail img {
     max-width: 600px;
     width: 100%;
+    min-width: 385px;
     max-height: 600px;
     height: auto;
     border-radius: 10px;
