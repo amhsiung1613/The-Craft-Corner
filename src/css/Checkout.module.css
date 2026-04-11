@@ -152,6 +152,6 @@
 @media (max-width: 600px) {
     .wrapper {
         flex-direction: column;
-        padding: 20px;
+        /* padding: 20px; */
     }
 }
