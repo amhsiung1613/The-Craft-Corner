@@ -117,14 +117,15 @@
     width: 195px;
     height: 30px;
     background: rgb(93, 70, 56);
-    border: none;
-    outline: none;
+    /* border: none;
+    outline: none; */
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
     color: rgb(215, 186, 151);
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .credit-card button {
@@ -134,8 +135,8 @@
     width: 195px;
     height: 30px;
     background: rgb(93, 70, 56);
-    border: none;
-    outline: none;
+    /* border: none;
+    outline: none; */
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
