@@ -79,7 +79,7 @@
     border-radius: 5px;
 }
 
-@mobile (max-width: 600px) {
+@media (max-width: 600px) {
     .product-detail {
         flex-direction: column;
         /* padding: 10px; */
