@@ -40,6 +40,6 @@
 
 @media (max-width: 600px){
     .aboutTop {
-        height: 10vh;
+        width: 30vw;
     }
 }
