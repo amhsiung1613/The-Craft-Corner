@@ -40,6 +40,8 @@
 
 @media (max-width: 600px){
     .aboutTop {
-        width: 30vw;
+        width: 40vw;
+        justify-content: center;
+        align-items: center;
     }
 }
