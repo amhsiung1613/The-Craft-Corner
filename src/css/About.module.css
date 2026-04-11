@@ -27,7 +27,7 @@
     padding: 30px;
 }
 
-.about .aboutBottom h1 {
+.aboutBottom h1 {
     font-weight: 400;
     font-size: 40px;
     color: black;
@@ -41,7 +41,12 @@
 @media (max-width: 600px){
     .aboutTop {
         width: 40vw;
+        display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .aboutBottom {
+        font-size: 20px;
     }
 }
