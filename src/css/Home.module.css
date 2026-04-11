@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    color: rgb(93, 70, 56);
 }
 
 .categories {
@@ -46,7 +47,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    color: rgba(93, 70, 56, 1);
+    color: rgb(93, 70, 56);
 }
 
 .reviews {
