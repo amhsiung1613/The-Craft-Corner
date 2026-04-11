@@ -12,7 +12,7 @@ function About() {
         <h1>
           About Us!
         </h1>
-        <p style={{ fontSize: "24px", textAlign: "center", margin: "0 20px", lineHeight: "1.5" }}>
+        <p className={styles.aboutText}>
         Hi there! My name is Amber and I am a UX/UI designer and web developer.<br/> <br/>
         This is my very first UX/UI and web development project. <br/>
         I created the initial UX/UI project for the Google UX Design Certificate and decided to take it <br/>a step further by creating an actual website for it.
