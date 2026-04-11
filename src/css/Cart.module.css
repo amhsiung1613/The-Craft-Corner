@@ -39,7 +39,7 @@
 .cartItem .description {
   width: 100%;
   font-size: 20px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .cartItem .description .countHandler input {
