@@ -1,18 +1,3 @@
-/* * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-a {
-  text-decoration: none;
-  color: rgb(97, 97, 97);
-}
-
-li {
-  list-style: none;
-} */
 
 .displayLayout{
   display: flex;
@@ -54,4 +39,10 @@ li {
 .displayContent {
   flex: 1;
   padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .Sidebar {
+    display: none;
+  }
 }
