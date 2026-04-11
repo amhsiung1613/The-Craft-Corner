@@ -46,7 +46,7 @@
         align-items: center;
     }
 
-    .aboutBottom {
+    .aboutBottom h1 {
         font-size: 20px;
     }
 }
