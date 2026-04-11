@@ -148,3 +148,10 @@
     background: rgb(224, 200, 170);
     color: rgb(93, 70, 56);
 }
+
+@media (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+}

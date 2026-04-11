@@ -97,6 +97,6 @@
 }
 
 .cart .checkout button:active {
-    background: rgb(224, 200, 170);
-    color: rgb(93, 70, 56);
+  background: rgb(224, 200, 170);
+  color: rgb(93, 70, 56);
 }
