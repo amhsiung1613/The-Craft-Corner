@@ -78,7 +78,7 @@
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
   /* Hide horizontal links */
   .rightSide a {
