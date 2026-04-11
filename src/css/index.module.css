@@ -10,7 +10,7 @@
   font-size: 30px;
   text-align: center;
   justify-content: center;
-  margin-right: 15%;
+  /* margin-right: 15%; */
   color: rgb(93, 70, 56);
   padding: 10px;
 }
@@ -41,8 +41,8 @@
   padding: 20px;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .Sidebar {
     display: none;
   }
-}
+} */
