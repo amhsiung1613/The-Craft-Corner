@@ -56,3 +56,24 @@
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 768px) {
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories .card {
+        max-width: 90%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .categories .card .img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+}
