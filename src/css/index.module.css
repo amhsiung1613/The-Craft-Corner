@@ -57,13 +57,14 @@
   padding: 5px 10px;
 }
 
-.filterButton:hover {
+/* .filterButton:hover {
   background: #dbb27b;
-}
+} */
 
 .filterButton:active {
-  background:rgb(93, 70, 56);
-  color: #faebd7;
+  /* background:rgb(93, 70, 56);
+  color: #faebd7; */
+  background: #dbb27b;
 }
 
 @media (max-width: 600px) {
