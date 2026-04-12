@@ -94,6 +94,8 @@ export default function Display() {
   const btn = document.querySelector(".filter-button");
   const sidebar = document.querySelector(".sidebar");
 
+  btn?.addEventListener("click", handler);
+
   btn.addEventListener("click", () => {
     sidebar.classList.toggle("open");
   });
