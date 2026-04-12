@@ -79,7 +79,7 @@
     padding: 15px 0px 15px 15px;
   }
 
-  /* .sidebar {
+  .sidebar {
     position: fixed;
     left: -100%;
     transition: left 0.3s;
@@ -87,5 +87,5 @@
 
   .sidebar.open {
     left: 0;
-  } */
+  }
 }
