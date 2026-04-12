@@ -57,7 +57,7 @@
   padding: 5px 10px;
 }
 
-.filterButton:focus{
+.filterButton:active {
   background:rgb(93, 70, 56);
   color: #faebd7;
 }
