@@ -97,7 +97,7 @@ export default function Display() {
   return (
     <div className={styles.displayLayout}>
       {/* <aside class="sidebar"> */}
-      <aside className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+      <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
         <Sidebar 
           handleChange={handleChange} 
           selectedCategory={selectedCategory}
