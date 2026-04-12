@@ -47,3 +47,15 @@
 .bag-icon {
   color: #535353;
 }
+
+
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
