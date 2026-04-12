@@ -94,6 +94,8 @@ export default function Display() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+  
+
   return (
     <div className={styles.displayLayout}>
       {/* <aside class="sidebar"> */}
