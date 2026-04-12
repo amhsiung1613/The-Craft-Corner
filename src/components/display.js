@@ -113,7 +113,7 @@ export default function Display() {
         <BreadCrumb pages={breadcrumbPages} />
         <h1>All Products</h1>
         <Navigation query={query} handleInputChange={handleInputChange} />
-        <button className="filter-button">Filters</button>
+        <button className="filter-button">Filter by</button>
         {/* <Recommended handleClick={handleClick} /> */}
         <Products 
           result={filteredProducts.map(product => (
