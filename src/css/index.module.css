@@ -47,7 +47,7 @@
   }
 } */
 
-.filter-button {
+.filterButton {
   display: none;
   border-radius: 9px;
   border: 2px solid rgb(93, 70, 56);
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 600px) {
-  .filter-button {
+  .filterButton {
     display: block;
   }
 }
