@@ -94,20 +94,20 @@ export default function Display() {
   const btn = document.querySelector(".filter-button");
   const sidebar = document.querySelector(".sidebar");
 
-  // btn.addEventListener("click", () => {
-  //   sidebar.classList.toggle("open");
-  // });
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
 
   return (
     <div className={styles.displayLayout}>
-      {/* <aside class="sidebar"> */}
+      <aside class="sidebar">
         <Sidebar 
           handleChange={handleChange} 
           selectedCategory={selectedCategory}
           selectedMaterial={selectedMaterial}
           selectedPrice={selectedPrice} 
         />
-      {/* </aside> */}
+      </aside>
       
       <div className={styles.displayContent}>
         <BreadCrumb pages={breadcrumbPages} />
