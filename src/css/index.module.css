@@ -71,4 +71,8 @@
   .filterButton {
     display: block;
   }
+
+  .displayLayout {
+    gap: 0px;
+  }
 }
