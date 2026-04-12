@@ -112,7 +112,7 @@ export default function Display() {
         <Navigation query={query} handleInputChange={handleInputChange} />
 
         <button
-            className="filter-button"
+            className={styles.filterButton}
             onClick={() => setSidebarOpen(!sidebarOpen)}>
             Filter by
         </button>
