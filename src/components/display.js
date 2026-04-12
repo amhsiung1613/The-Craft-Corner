@@ -91,19 +91,29 @@ export default function Display() {
     !selectedPrice || product.range === selectedPrice
   );
 
+  const btn = document.querySelector(".filter-button");
+  const sidebar = document.querySelector(".sidebar");
+
+  btn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
+
   return (
     <div className={styles.displayLayout}>
-      <Sidebar 
-        handleChange={handleChange} 
-        selectedCategory={selectedCategory}
-        selectedMaterial={selectedMaterial}
-        selectedPrice={selectedPrice} 
-      />
+      {/* <aside class="sidebar"> */}
+        <Sidebar 
+          handleChange={handleChange} 
+          selectedCategory={selectedCategory}
+          selectedMaterial={selectedMaterial}
+          selectedPrice={selectedPrice} 
+        />
+      {/* </aside> */}
       
       <div className={styles.displayContent}>
         <BreadCrumb pages={breadcrumbPages} />
         <h1>All Products</h1>
         <Navigation query={query} handleInputChange={handleInputChange} />
+        <button className="filter-button">Filters</button>
         {/* <Recommended handleClick={handleClick} /> */}
         <Products 
           result={filteredProducts.map(product => (

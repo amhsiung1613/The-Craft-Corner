@@ -46,3 +46,13 @@
     display: none;
   }
 } */
+
+.filter-button {
+  display: none;;
+}
+
+@media (max-width: 600px) {
+  .filter-button {
+    display: block;
+  }
+}
