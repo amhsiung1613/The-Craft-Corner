@@ -49,6 +49,8 @@
 
 .filter-button {
   display: none;
+  border-radius: 9 px;
+  background: #faebd7;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   padding: 10px 20px;
 }
