@@ -57,6 +57,11 @@
   padding: 5px 10px;
 }
 
+.filterButton:focus{
+  background:rgb(93, 70, 56);
+  color: #faebd7;
+}
+
 @media (max-width: 600px) {
   .filterButton {
     display: block;
