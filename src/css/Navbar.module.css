@@ -97,7 +97,7 @@
   .hiddenMenu {
     display:block;
     position:absolute;
-    float: left;
+    left: auto;
   }
   
 
