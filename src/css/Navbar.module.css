@@ -101,6 +101,10 @@
     gap: 8px;
     display: flex;
   }
+
+  .hiddenMenu svg {
+    color: rgb(93, 70, 56);
+  }
   
 
 }
