@@ -19,6 +19,6 @@
 
 @media (max-width: 600px) {
     .carousel {
-        aspect-ratio: none;
+        max-height: 320px;
     }
 }
