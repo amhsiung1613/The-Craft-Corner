@@ -10,7 +10,7 @@ const Sidebar = ({ handleChange,selectedCategory, selectedMaterial, selectedPric
   // }
   return (
       <section>
-        <a href="javascript:void(0)" class="closebtn" onclick={closeSideBar}>&times;</a>
+        <a class="closebtn" onclick={closeSideBar}>&times;</a>
         <Category handleChange={handleChange} selectedCategory={selectedCategory} />
         <Price handleChange={handleChange} selectedPrice={selectedPrice} />
         <Material handleChange={handleChange} selectedMaterial={selectedMaterial} />
