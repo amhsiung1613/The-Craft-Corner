@@ -99,7 +99,8 @@
     position: absolute;
     right: 25px;
     font-size: 36px;
-    margin: 50px;
+    margin-left: 50px;
     color: rgb(93, 70, 56);
+    padding: 5px;
   }
 }
