@@ -49,8 +49,7 @@
 .sidebar .closebtn {
   display: none;
   position: absolute;
-  justify-content: flex-end;
-  margin-left: auto;
+  justify-self: flex-end;
   font-size: 36px;
   margin-left: 50px;
 }
