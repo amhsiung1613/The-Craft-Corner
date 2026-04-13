@@ -8,7 +8,7 @@ import Image from 'next/image';
 import ReorderIcon from '@mui/icons-material/Reorder';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-// import IconButton from '@mui/material/IconButton';
+import IconButton from '@mui/material/IconButton';
 import styles from "../css/Navbar.module.css";
 // import { ShopContext } from '../context/shop-context';
 
@@ -46,12 +46,12 @@ function Navbar() {
           {/* <Link to="/account"> Account </Link> */}
           <Link href="/about"> About </Link>
           
-          <a href="/cart">
+          <IconButton href="/cart">
             <ShoppingCartIcon />
-          </a>
-          <a href="/favorites">
+          </IconButton>
+          <IconButton href="/favorites">
             <FavoriteIcon />
-          </a>
+          </IconButton>
           <button onClick={toggleNavbar}>
             <ReorderIcon />
           </button>
