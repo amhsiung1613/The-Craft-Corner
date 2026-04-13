@@ -18,7 +18,7 @@ const BreadCrumb = ({ pages = [{ name: '', link: '' }] }) => {
         <>
             <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
-                    <li className="breadcrumb-item"><Link href="/products">Products</Link></li>
+                    <li className="breadcrumb-item"><a href="/products">Products</a></li>
                     { breadCrumbs }
                 </ol>
             </nav>
