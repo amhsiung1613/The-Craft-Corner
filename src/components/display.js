@@ -100,12 +100,12 @@ export default function Display() {
     <div className={styles.displayLayout}>
       {/* <aside class="sidebar"> */}
       <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
-        <Sidebar 
+        <Sidebar setSidebarOpen={setSidebarOpen} 
           handleChange={handleChange} 
           selectedCategory={selectedCategory}
           selectedMaterial={selectedMaterial}
           selectedPrice={selectedPrice} 
-          closeSidebar={() => setSidebarOpen(false)}
+          // closeSidebar={() => setSidebarOpen(false)}
         />
       </aside>
       
