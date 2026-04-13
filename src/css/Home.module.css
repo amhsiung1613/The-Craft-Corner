@@ -66,8 +66,8 @@
     }
 
     .categories .card {
-        max-width: 90%;
-        width: 100%;
+        max-width: 80%;
+        width: auto;
         padding: 20px;
     }
 
