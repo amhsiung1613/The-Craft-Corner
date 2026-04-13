@@ -151,6 +151,10 @@
 }
 
 @media (max-width: 600px) {
+  .image-slider {
+    height: 50vw;
+  }
+  
   .img-slider-dots {
     display: none;
   }
