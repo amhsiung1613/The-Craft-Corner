@@ -17,9 +17,8 @@
     object-fit: cover;   
 } */
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .carousel {
-        height: 50vw;
-        width: auto;
+        aspect-ratio: none;
     }
-} */
+}
