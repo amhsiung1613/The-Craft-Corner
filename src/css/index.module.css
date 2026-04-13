@@ -49,7 +49,7 @@
 .closebtn {
   display: none;
   position: absolute;
-  right: 0;
+  right: 25;
   font-size: 36px;
   margin-left: 50px;
 }
