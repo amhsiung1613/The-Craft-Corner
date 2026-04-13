@@ -53,6 +53,10 @@
   display: none;
 }
 
+/* .rightSide a {
+  display: none;
+} */
+
 /* OPEN / CLOSE STATES */
 .open .hiddenLinks {
   display: flex;
