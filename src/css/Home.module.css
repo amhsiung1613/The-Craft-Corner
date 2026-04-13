@@ -65,8 +65,8 @@
         align-items: center;
     }
 
-    /* .categories .card {
-        max-width: 80%;
+    .categories .card {
+        max-width: 90%;
         width: 100%;
         padding: 20px;
     }
@@ -75,6 +75,6 @@
         width: 100%;
         height: auto;
         max-height: 250px;
-    } */
+    }
 
 }
