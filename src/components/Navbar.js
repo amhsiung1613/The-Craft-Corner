@@ -28,14 +28,22 @@ function Navbar() {
           <Link href="/home" passHref>
             <Image src={Logo.src} alt="Logo" width={80} height={80} style={{ cursor: 'pointer'}}/>
           </Link>
-          <div className={styles.hiddenLinks}>
-            {/* <Link href="/home"> Home </Link> */}
-            <Link href="/products"> Products </Link>
-            {/* <Link to="/search"> Search </Link> */}
-            {/* <Link href="/favorites"> Favorites </Link>
-            <Link href="/cart" > Cart </Link>  */}
-            {/* <Link to="/account"> Account </Link> */}
-            <Link href="/about"> About </Link>
+          <div className={styles.hiddenMenu}>
+            <IconButton href="/cart">
+              <ShoppingCartIcon />
+            </IconButton>
+            <IconButton href="/favorites">
+              <FavoriteIcon />
+            </IconButton>
+            <div className={styles.hiddenLinks}>
+              {/* <Link href="/home"> Home </Link> */}
+              <Link href="/products"> Products </Link>
+              {/* <Link to="/search"> Search </Link> */}
+              {/* <Link href="/favorites"> Favorites </Link>
+              <Link href="/cart" > Cart </Link>  */}
+              {/* <Link to="/account"> Account </Link> */}
+              <Link href="/about"> About </Link>
+            </div>
           </div>
         </div>
         <div className={styles.rightSide}>
@@ -46,12 +54,6 @@ function Navbar() {
           {/* <Link to="/account"> Account </Link> */}
           <Link href="/about"> About </Link>
           
-          <IconButton href="/cart">
-            <ShoppingCartIcon />
-          </IconButton>
-          <IconButton href="/favorites">
-            <FavoriteIcon />
-          </IconButton>
           <button onClick={toggleNavbar}>
             <ReorderIcon />
           </button>
