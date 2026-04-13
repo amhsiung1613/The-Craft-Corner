@@ -30,12 +30,12 @@ function Navbar() {
           </Link>
           <div className={styles.hiddenLinks}>
             {/* <Link href="/home"> Home </Link> */}
-            <Link href="/products"> Products </Link>
+            <Link href="/products" onClick={() => setOpenLinks(false)}> Products </Link>
             {/* <Link to="/search"> Search </Link> */}
             {/* <Link href="/favorites"> Favorites </Link>
             <Link href="/cart" > Cart </Link>  */}
             {/* <Link to="/account"> Account </Link> */}
-            <Link href="/about"> About </Link>
+            <Link href="/about" onClick={() => setOpenLinks(false)}> About </Link>
           </div>  
         </div>
         <div className={styles.rightSide}>
@@ -47,13 +47,13 @@ function Navbar() {
           <Link href="/about"> About </Link>
 
           <div className={styles.hiddenMenu}>
-            <Link href="/cart">
+            <Link href="/cart" onClick={() => setOpenLinks(false)}>
               <IconButton>
                 <ShoppingCartIcon />
               </IconButton>
             </Link>
 
-            <Link href="/favorites">
+            <Link href="/favorites" onClick={() => setOpenLinks(false)}>
               <IconButton>
                 <FavoriteIcon />
               </IconButton>
