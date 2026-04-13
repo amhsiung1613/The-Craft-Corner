@@ -53,7 +53,7 @@
   display: none;
 }
 
-.hiddenMenu {
+.rightSide .hiddenMenu {
   display: none;
 }
 
@@ -94,7 +94,7 @@
     display: block;
   }
 
-  .hiddenMenu {
+  .rightSide .hiddenMenu {
     display:block;
     position:relative;
     right: 0;
