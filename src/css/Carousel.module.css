@@ -19,6 +19,7 @@
 
 @media (max-width: 600px) {
     .carousel {
-        max-height: 50vw;
+        height: 50vw;
+        width: auto;
     }
 }
