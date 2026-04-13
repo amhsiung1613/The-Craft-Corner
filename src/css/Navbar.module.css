@@ -95,6 +95,7 @@
     display: block;
     position: relative;
     gap: 4px;
+    margin: 0;
     display: flex;
   }
 
