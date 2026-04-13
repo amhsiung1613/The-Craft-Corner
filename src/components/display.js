@@ -105,6 +105,7 @@ export default function Display() {
           selectedCategory={selectedCategory}
           selectedMaterial={selectedMaterial}
           selectedPrice={selectedPrice} 
+          closeSidebar={() => setSidebarOpen(false)}
         />
       </aside>
       
