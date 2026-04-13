@@ -28,6 +28,7 @@ function Navbar() {
           <Link href="/home" passHref>
             <Image src={Logo.src} alt="Logo" width={80} height={80} style={{ cursor: 'pointer'}}/>
           </Link>
+          
           <div className={styles.hiddenMenu}>
             <IconButton href="/cart">
               <ShoppingCartIcon />
