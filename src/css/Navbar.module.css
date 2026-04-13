@@ -95,10 +95,12 @@
     display: block;
   }
 
-  .rightSide a .hiddenMenu {
+  .rightSide .hiddenMenu {
     display: block;
     position: relative;
-    right: 25;
+    right: 25px;
+    gap: 8px;
+    display: flex;
   }
   
 

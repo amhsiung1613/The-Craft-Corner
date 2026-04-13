@@ -47,12 +47,17 @@ function Navbar() {
           <Link href="/about"> About </Link>
 
           <div className={styles.hiddenMenu}>
-            <IconButton href="/cart">
-              <ShoppingCartIcon />
-            </IconButton>
-            <IconButton href="/favorites">
-              <FavoriteIcon />
-            </IconButton>
+            <Link href="/cart">
+              <IconButton>
+                <ShoppingCartIcon />
+              </IconButton>
+            </Link>
+
+            <Link href="/favorites">
+              <IconButton>
+                <FavoriteIcon />
+              </IconButton>
+            </Link>
           </div>
           
           <button onClick={toggleNavbar}>
