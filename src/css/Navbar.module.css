@@ -95,7 +95,7 @@
     display: block;
   }
 
-  .rightSide .hiddenMenu {
+  .rightSide a .hiddenMenu {
     display: block;
     position: relative;
     right: 25;
