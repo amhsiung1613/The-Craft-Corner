@@ -99,6 +99,10 @@
     margin-left: 0px;
   }
 
+  .hiddneMenu a {
+    margin: 0;
+    padding: 0;
+  }
   .hiddenMenu svg {
     color: rgb(93, 70, 56);
   }
