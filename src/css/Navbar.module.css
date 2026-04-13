@@ -84,7 +84,7 @@
   /* Hide horizontal links */
   .rightSide > a {
     display: none;
-    margin: none;
+    margin-left: 0px;
   }
 
   /* Show hamburger */
