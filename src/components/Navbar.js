@@ -35,16 +35,16 @@ function Navbar() {
             <IconButton href="/favorites">
               <FavoriteIcon />
             </IconButton>
-            <div className={styles.hiddenLinks}>
-              {/* <Link href="/home"> Home </Link> */}
-              <Link href="/products"> Products </Link>
-              {/* <Link to="/search"> Search </Link> */}
-              {/* <Link href="/favorites"> Favorites </Link>
-              <Link href="/cart" > Cart </Link>  */}
-              {/* <Link to="/account"> Account </Link> */}
-              <Link href="/about"> About </Link>
-            </div>
           </div>
+          <div className={styles.hiddenLinks}>
+            {/* <Link href="/home"> Home </Link> */}
+            <Link href="/products"> Products </Link>
+            {/* <Link to="/search"> Search </Link> */}
+            {/* <Link href="/favorites"> Favorites </Link>
+            <Link href="/cart" > Cart </Link>  */}
+            {/* <Link to="/account"> Account </Link> */}
+            <Link href="/about"> About </Link>
+          </div>  
         </div>
         <div className={styles.rightSide}>
           <Link href="/products"> Products </Link>

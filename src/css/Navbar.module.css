@@ -53,7 +53,7 @@
   display: none;
 }
 
-.rightSide IconButton {
+.hiddenMenu {
   display: none;
 }
 
@@ -92,6 +92,12 @@
   /* Show hamburger */
   .rightSide button {
     display: block;
+  }
+
+  .hiddenMenu {
+    display:block;
+    position:absolute;
+    float: right;
   }
   
 
