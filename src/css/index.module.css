@@ -49,7 +49,7 @@
 .sidebar .closebtn {
   display: none;
   position: absolute;
-  justify-self: flex-end;
+  right: 0;
   font-size: 36px;
   margin-left: 50px;
 }
