@@ -94,7 +94,7 @@
   .hiddenMenu {
     display: block;
     position: relative;
-    gap: 8px;
+    gap: 4px;
     display: flex;
   }
 
