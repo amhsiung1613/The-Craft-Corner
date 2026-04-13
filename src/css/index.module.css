@@ -46,7 +46,7 @@
   left: 0;
 }
 
-.sidebar .closebtn {
+.closebtn {
   display: none;
   position: absolute;
   right: 0;
