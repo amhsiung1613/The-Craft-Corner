@@ -95,7 +95,7 @@
     display: block;
     position: relative;
     gap: 4px;
-    margin: 0;
+    margin: none;
     display: flex;
   }
 
