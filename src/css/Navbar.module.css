@@ -92,7 +92,7 @@
   }
 
   .hiddenMenu {
-    display: block;
+    /* display: block; */
     position: relative;
     gap: 4px;
     display: flex;
