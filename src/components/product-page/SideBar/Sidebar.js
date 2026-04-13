@@ -10,7 +10,6 @@ const Sidebar = ({ handleChange,selectedCategory, selectedMaterial, selectedPric
   // }
   return (
       <section>
-        <button className="closebtn" onClick={() => setSidebarOpen(false)}>&times;</button>
         <Category handleChange={handleChange} selectedCategory={selectedCategory} />
         <Price handleChange={handleChange} selectedPrice={selectedPrice} />
         <Material handleChange={handleChange} selectedMaterial={selectedMaterial} />

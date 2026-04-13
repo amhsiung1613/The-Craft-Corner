@@ -101,11 +101,15 @@ export default function Display() {
       {/* <aside class="sidebar"> */}
       <aside className={`${styles.sidebar} ${sidebarOpen ? styles.open : ""}`}>
         <Sidebar setSidebarOpen={setSidebarOpen} 
+          <button
+            className={styles.closebtn} 
+            onClick={() => setSidebarOpen(false)}>
+              &times;
+          </button>
           handleChange={handleChange} 
           selectedCategory={selectedCategory}
           selectedMaterial={selectedMaterial}
           selectedPrice={selectedPrice} 
-          // closeSidebar={() => setSidebarOpen(false)}
         />
       </aside>
       
