@@ -50,6 +50,7 @@
   display: none;
   position: absolute;
   justify-content: flex-end;
+  margin-left: auto;
   font-size: 36px;
   margin-left: 50px;
 }
