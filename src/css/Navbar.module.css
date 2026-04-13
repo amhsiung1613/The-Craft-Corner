@@ -68,6 +68,7 @@
   background-color: rgb(224, 200, 170);
   padding: 10px;
   z-index: 1000;
+
 }
 
 .close .hiddenLinks {
@@ -95,9 +96,9 @@
   }
 
   .rightSide .hiddenMenu {
-    display:block;
-    position:relative;
-    right: 0;
+    display: block;
+    position: relative;
+    right: 25;
   }
   
 
