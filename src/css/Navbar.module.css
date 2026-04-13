@@ -71,10 +71,6 @@
 
 }
 
-.close .hiddenLinks {
-  display: none;
-}
-
 /* TABLET */
 @media (max-width: 900px) {
   .navbar {
@@ -86,7 +82,7 @@
 @media (max-width: 600px) {
 
   /* Hide horizontal links */
-  .rightSide a {
+  .rightSide > a {
     display: none;
   }
 
