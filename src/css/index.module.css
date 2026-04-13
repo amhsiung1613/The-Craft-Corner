@@ -48,10 +48,6 @@
 
 .closebtn {
   display: none;
-  position: absolute;
-  right: 25;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
 .filterButton {
@@ -97,7 +93,11 @@
   .sidebar.open {
     left: 0;
   }
-  .sidebar .closebtn {
+  .closebtn {
     display: block;
+    position: absolute;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
   }
 }
