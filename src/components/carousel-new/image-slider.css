@@ -146,7 +146,7 @@
 
 @media (max-width: 600px) {
   .image-slider {
-    max-height:320px;
+    height:255px;
   }
   
   .img-slider-dots {
